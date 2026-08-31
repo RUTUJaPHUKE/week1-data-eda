@@ -1,0 +1,785 @@
+survived,pclass,sex,age,sibsp,parch,fare,embarked,embark_town,alone,deck_known,family_size,is_alone,fare_log,age_group
+0,3,male,22.0,1,0,7.25,S,Southampton,False,0,2,0,2.1102132003465894,Young Adult
+1,1,female,38.0,1,0,71.2833,C,Cherbourg,False,1,2,0,4.2805931204649,Adult
+1,3,female,26.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Young Adult
+1,1,female,35.0,1,0,53.1,S,Southampton,False,1,2,0,3.9908341858524357,Young Adult
+0,3,male,35.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,3,male,,0,0,8.4583,Q,Queenstown,True,0,1,1,2.246892662898172,
+0,1,male,54.0,0,0,51.8625,S,Southampton,True,1,1,1,3.967694202798607,Adult
+0,3,male,2.0,3,1,21.075,S,Southampton,False,0,5,0,3.0944457464900235,Child
+1,3,female,27.0,0,2,11.1333,S,Southampton,False,0,3,0,2.495953738718064,Young Adult
+1,2,female,14.0,1,0,30.0708,C,Cherbourg,False,0,2,0,3.436268471383741,Teen
+1,3,female,4.0,1,1,16.7,S,Southampton,False,1,3,0,2.8735646395797834,Child
+1,1,female,58.0,0,0,26.55,S,Southampton,True,1,1,1,3.3160025355989236,Adult
+0,3,male,20.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,3,male,39.0,1,5,31.275,S,Southampton,False,0,7,0,3.4742929367327062,Adult
+0,3,female,14.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Teen
+1,2,female,55.0,0,0,16.0,S,Southampton,True,0,1,1,2.833213344056216,Adult
+0,3,male,2.0,4,1,29.125,Q,Queenstown,False,0,6,0,3.405355391810819,Child
+1,2,male,,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,
+0,3,female,31.0,1,0,18.0,S,Southampton,False,0,2,0,2.9444389791664403,Young Adult
+1,3,female,,0,0,7.225,C,Cherbourg,True,0,1,1,2.1071782966514356,
+0,2,male,35.0,0,0,26.0,S,Southampton,True,0,1,1,3.295836866004329,Young Adult
+1,2,male,34.0,0,0,13.0,S,Southampton,True,1,1,1,2.6390573296152584,Young Adult
+1,3,female,15.0,0,0,8.0292,Q,Queenstown,True,0,1,1,2.2004637699272855,Teen
+1,1,male,28.0,0,0,35.5,S,Southampton,True,1,1,1,3.597312260588446,Young Adult
+0,3,female,8.0,3,1,21.075,S,Southampton,False,0,5,0,3.0944457464900235,Child
+1,3,female,38.0,1,5,31.3875,S,Southampton,False,0,7,0,3.4777725458882283,Adult
+0,3,male,,0,0,7.225,C,Cherbourg,True,0,1,1,2.1071782966514356,
+0,1,male,19.0,3,2,263.0,S,Southampton,False,1,6,0,5.575949103146316,Young Adult
+1,3,female,,0,0,7.8792,Q,Queenstown,True,0,1,1,2.1837114628556327,
+0,3,male,,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,
+0,1,male,40.0,0,0,27.7208,C,Cherbourg,True,0,1,1,3.357621598945279,Adult
+1,1,female,,1,0,146.5208,C,Cherbourg,False,1,2,0,4.993969182787072,
+1,3,female,,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,
+0,2,male,66.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Senior
+0,1,male,28.0,1,0,82.1708,C,Cherbourg,False,0,2,0,4.420896324687287,Young Adult
+0,1,male,42.0,1,0,52.0,S,Southampton,False,0,2,0,3.970291913552122,Adult
+1,3,male,,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,
+0,3,male,21.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,3,female,18.0,2,0,18.0,S,Southampton,False,0,3,0,2.9444389791664403,Teen
+1,3,female,14.0,1,0,11.2417,C,Cherbourg,False,0,2,0,2.5048481563289,Teen
+0,3,female,40.0,1,0,9.475,S,Southampton,False,0,2,0,2.348991465808201,Adult
+0,2,female,27.0,1,0,21.0,S,Southampton,False,0,2,0,3.091042453358316,Young Adult
+0,3,male,,0,0,7.8958,C,Cherbourg,True,0,1,1,2.1855792552411137,
+1,2,female,3.0,1,2,41.5792,C,Cherbourg,False,0,4,0,3.7513658711253766,Child
+1,3,female,19.0,0,0,7.8792,Q,Queenstown,True,0,1,1,2.1837114628556327,Young Adult
+0,3,male,,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,
+0,3,male,,1,0,15.5,Q,Queenstown,False,0,2,0,2.803360380906535,
+0,3,male,,2,0,21.6792,C,Cherbourg,False,0,3,0,3.1214482048688246,
+0,3,female,18.0,1,0,17.8,S,Southampton,False,0,2,0,2.9338568698359038,Teen
+0,3,male,7.0,4,1,39.6875,S,Southampton,False,0,6,0,3.705920919968788,Child
+0,3,male,21.0,0,0,7.8,S,Southampton,True,0,1,1,2.174751721484161,Young Adult
+1,1,female,49.0,1,0,76.7292,C,Cherbourg,False,1,2,0,4.353230991152628,Adult
+1,2,female,29.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Young Adult
+0,1,male,65.0,0,1,61.9792,C,Cherbourg,False,1,2,0,4.142804513146981,Senior
+1,1,male,,0,0,35.5,S,Southampton,True,1,1,1,3.597312260588446,
+1,2,female,21.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,3,male,28.5,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,Young Adult
+1,2,female,5.0,1,2,27.75,S,Southampton,False,0,4,0,3.3586377672433594,Child
+0,3,male,11.0,5,2,46.9,S,Southampton,False,0,8,0,3.8691155044168695,Child
+0,3,male,22.0,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,Young Adult
+1,1,female,38.0,0,0,80.0,,,True,1,1,1,4.394449154672439,Adult
+0,1,male,45.0,1,0,83.475,S,Southampton,False,1,2,0,4.436455632600354,Adult
+0,3,male,4.0,3,2,27.9,S,Southampton,False,0,6,0,3.3638415951183864,Child
+0,1,male,,0,0,27.7208,C,Cherbourg,True,0,1,1,3.357621598945279,
+1,3,male,,1,1,15.2458,C,Cherbourg,False,0,3,0,2.7878344138303452,
+1,2,female,29.0,0,0,10.5,S,Southampton,True,1,1,1,2.4423470353692043,Young Adult
+0,3,male,19.0,0,0,8.1583,S,Southampton,True,0,1,1,2.2146605719425225,Young Adult
+1,3,female,17.0,4,2,7.925,S,Southampton,False,0,7,0,2.188856327665703,Teen
+0,3,male,26.0,2,0,8.6625,S,Southampton,False,0,3,0,2.2682524139135403,Young Adult
+0,2,male,32.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,3,female,16.0,5,2,46.9,S,Southampton,False,0,8,0,3.8691155044168695,Teen
+0,2,male,21.0,0,0,73.5,S,Southampton,True,0,1,1,4.310799125385514,Young Adult
+0,3,male,26.0,1,0,14.4542,C,Cherbourg,False,0,2,0,2.737880811060884,Young Adult
+1,3,male,32.0,0,0,56.4958,S,Southampton,True,0,1,1,4.05171190165724,Young Adult
+0,3,male,25.0,0,0,7.65,S,Southampton,True,1,1,1,2.157559320943788,Young Adult
+1,2,male,0.83,0,2,29.0,S,Southampton,False,0,3,0,3.4011973816621555,Child
+1,3,female,30.0,0,0,12.475,S,Southampton,True,0,1,1,2.600836116795061,Young Adult
+0,3,male,22.0,0,0,9.0,S,Southampton,True,0,1,1,2.302585092994046,Young Adult
+1,3,male,29.0,0,0,9.5,S,Southampton,True,0,1,1,2.3513752571634776,Young Adult
+1,3,female,,0,0,7.7875,Q,Queenstown,True,0,1,1,2.1733302571367834,
+0,1,male,28.0,0,0,47.1,S,Southampton,True,0,1,1,3.8732821771117156,Young Adult
+1,2,female,17.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Teen
+1,3,female,33.0,3,0,15.85,S,Southampton,False,0,4,0,2.8243506567983707,Young Adult
+0,3,male,16.0,1,3,34.375,S,Southampton,False,0,5,0,3.5660053559634015,Teen
+1,1,female,23.0,3,2,263.0,S,Southampton,False,1,6,0,5.575949103146316,Young Adult
+0,3,male,24.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,3,male,29.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,3,male,20.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Young Adult
+0,1,male,46.0,1,0,61.175,S,Southampton,False,1,2,0,4.1299529896894684,Adult
+0,3,male,26.0,1,2,20.575,S,Southampton,False,0,4,0,3.0715352369694915,Young Adult
+0,3,male,59.0,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,Adult
+0,1,male,71.0,0,0,34.6542,C,Cherbourg,True,1,1,1,3.57386695198272,Senior
+1,1,male,23.0,0,1,63.3583,C,Cherbourg,False,1,2,0,4.164465907853638,Young Adult
+1,2,female,34.0,0,1,23.0,S,Southampton,False,0,2,0,3.1780538303479458,Young Adult
+0,2,male,34.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Young Adult
+0,3,female,28.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+0,1,male,21.0,0,1,77.2875,S,Southampton,False,1,2,0,4.360387947851531,Young Adult
+0,3,male,33.0,0,0,8.6542,S,Southampton,True,0,1,1,2.267393053825037,Young Adult
+0,3,male,37.0,2,0,7.925,S,Southampton,False,0,3,0,2.188856327665703,Adult
+0,3,male,28.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+1,3,female,21.0,0,0,7.65,S,Southampton,True,0,1,1,2.157559320943788,Young Adult
+1,3,male,,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,
+0,3,male,38.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Adult
+1,3,female,,1,0,24.15,Q,Queenstown,False,0,2,0,3.224857896545748,
+0,1,male,47.0,0,0,52.0,S,Southampton,True,1,1,1,3.970291913552122,Adult
+0,3,female,14.5,1,0,14.4542,C,Cherbourg,False,0,2,0,2.737880811060884,Teen
+0,3,male,22.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,3,female,20.0,1,0,9.825,S,Southampton,False,0,2,0,2.3818582738885534,Young Adult
+0,3,female,17.0,0,0,14.4583,C,Cherbourg,True,0,1,1,2.738146075922933,Teen
+0,3,male,21.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Young Adult
+0,3,male,70.5,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Senior
+0,2,male,29.0,1,0,21.0,S,Southampton,False,0,2,0,3.091042453358316,Young Adult
+0,1,male,24.0,0,1,247.5208,C,Cherbourg,False,1,2,0,5.515526544247129,Young Adult
+0,3,female,2.0,4,2,31.275,S,Southampton,False,0,7,0,3.4742929367327062,Child
+0,2,male,21.0,2,0,73.5,S,Southampton,False,0,3,0,4.310799125385514,Young Adult
+0,2,male,32.5,1,0,30.0708,C,Cherbourg,False,0,2,0,3.436268471383741,Young Adult
+1,2,female,32.5,0,0,13.0,S,Southampton,True,1,1,1,2.6390573296152584,Young Adult
+0,1,male,54.0,0,1,77.2875,S,Southampton,False,1,2,0,4.360387947851531,Adult
+1,3,male,12.0,1,0,11.2417,C,Cherbourg,False,0,2,0,2.5048481563289,Child
+0,3,male,,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,
+1,3,male,24.0,0,0,7.1417,S,Southampton,True,0,1,1,2.0969990034181696,Young Adult
+1,3,female,,1,1,22.3583,C,Cherbourg,False,1,3,0,3.1509523813392697,
+0,3,male,45.0,0,0,6.975,S,Southampton,True,0,1,1,2.076311648670908,Adult
+0,3,male,33.0,0,0,7.8958,C,Cherbourg,True,0,1,1,2.1855792552411137,Young Adult
+0,3,male,20.0,0,0,7.05,S,Southampton,True,0,1,1,2.0856720914304723,Young Adult
+0,3,female,47.0,1,0,14.5,S,Southampton,False,0,2,0,2.740840023925201,Adult
+0,2,male,25.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,2,male,23.0,0,0,15.0458,C,Cherbourg,True,0,1,1,2.775447133088262,Young Adult
+1,1,female,19.0,0,2,26.2833,S,Southampton,False,1,3,0,3.3062747934011893,Young Adult
+0,1,male,37.0,1,0,53.1,S,Southampton,False,1,2,0,3.9908341858524357,Adult
+0,3,male,16.0,0,0,9.2167,S,Southampton,True,0,1,1,2.3240236363515288,Teen
+0,1,male,24.0,0,0,79.2,C,Cherbourg,True,1,1,1,4.384523514872469,Young Adult
+0,3,female,,0,2,15.2458,C,Cherbourg,False,0,3,0,2.7878344138303452,
+1,3,female,22.0,0,0,7.75,S,Southampton,True,0,1,1,2.169053700369523,Young Adult
+1,3,female,24.0,1,0,15.85,S,Southampton,False,0,2,0,2.8243506567983707,Young Adult
+0,3,male,19.0,0,0,6.75,Q,Queenstown,True,0,1,1,2.0476928433652555,Young Adult
+0,2,male,18.0,0,0,11.5,S,Southampton,True,0,1,1,2.5257286443082556,Teen
+0,2,male,19.0,1,1,36.75,S,Southampton,False,0,3,0,3.6309854756950335,Young Adult
+1,3,male,27.0,0,0,7.7958,S,Southampton,True,0,1,1,2.174274334826008,Young Adult
+0,3,female,9.0,2,2,34.375,S,Southampton,False,0,5,0,3.5660053559634015,Child
+0,2,male,36.5,0,2,26.0,S,Southampton,False,1,3,0,3.295836866004329,Adult
+0,2,male,42.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+0,2,male,51.0,0,0,12.525,S,Southampton,True,0,1,1,2.6045398247325453,Adult
+1,1,female,22.0,1,0,66.6,S,Southampton,False,1,2,0,4.213607983048918,Young Adult
+0,3,male,55.5,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Adult
+0,3,male,40.5,0,2,14.5,S,Southampton,False,0,3,0,2.740840023925201,Adult
+0,3,male,,0,0,7.3125,S,Southampton,True,0,1,1,2.1177604059819726,
+0,1,male,51.0,0,1,61.3792,C,Cherbourg,False,0,2,0,4.133231886474144,Adult
+1,3,female,16.0,0,0,7.7333,Q,Queenstown,True,0,1,1,2.167143305297764,Teen
+0,3,male,30.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,3,male,,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,
+0,3,male,,8,2,69.55,S,Southampton,False,0,11,0,4.256321678298823,
+0,3,male,44.0,0,1,16.1,S,Southampton,False,0,2,0,2.8390784635086144,Adult
+1,2,female,40.0,0,0,15.75,S,Southampton,True,0,1,1,2.8183982582710754,Adult
+0,3,male,26.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Young Adult
+0,3,male,17.0,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,Teen
+0,3,male,1.0,4,1,39.6875,S,Southampton,False,0,6,0,3.705920919968788,Child
+1,3,male,9.0,0,2,20.525,S,Southampton,False,0,3,0,3.0692150503137943,Child
+1,1,female,,0,1,55.0,S,Southampton,False,1,2,0,4.02535169073515,
+0,3,female,45.0,1,4,27.9,S,Southampton,False,0,6,0,3.3638415951183864,Adult
+0,1,male,,0,0,25.925,S,Southampton,True,0,1,1,3.2930552230424524,
+0,3,male,28.0,0,0,56.4958,S,Southampton,True,0,1,1,4.05171190165724,Young Adult
+0,1,male,61.0,0,0,33.5,S,Southampton,True,1,1,1,3.5409593240373143,Senior
+0,3,male,4.0,4,1,29.125,Q,Queenstown,False,0,6,0,3.405355391810819,Child
+1,3,female,1.0,1,1,11.1333,S,Southampton,False,0,3,0,2.495953738718064,Child
+0,1,male,56.0,0,0,30.6958,C,Cherbourg,True,1,1,1,3.4561841799918147,Adult
+0,3,male,18.0,1,1,7.8542,S,Southampton,False,0,3,0,2.180891922715322,Teen
+0,3,male,,3,1,25.4667,S,Southampton,False,0,5,0,3.275887339030031,
+0,1,female,50.0,0,0,28.7125,C,Cherbourg,True,1,1,1,3.391567832686312,Adult
+0,2,male,30.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,3,male,36.0,0,0,0.0,S,Southampton,True,0,1,1,0.0,Adult
+0,3,female,,8,2,69.55,S,Southampton,False,0,11,0,4.256321678298823,
+0,2,male,,0,0,15.05,C,Cherbourg,True,0,1,1,2.775708849576025,
+0,3,male,9.0,4,2,31.3875,S,Southampton,False,0,7,0,3.4777725458882283,Child
+1,2,male,1.0,2,1,39.0,S,Southampton,False,1,4,0,3.6888794541139363,Child
+1,3,female,4.0,0,2,22.025,S,Southampton,False,0,3,0,3.1365805821413706,Child
+0,1,male,,0,0,50.0,S,Southampton,True,1,1,1,3.9318256327243257,
+1,3,female,,1,0,15.5,Q,Queenstown,False,0,2,0,2.803360380906535,
+1,1,male,45.0,0,0,26.55,S,Southampton,True,0,1,1,3.3160025355989236,Adult
+0,3,male,40.0,1,1,15.5,Q,Queenstown,False,0,3,0,2.803360380906535,Adult
+0,3,male,36.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Adult
+1,2,female,32.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,2,male,19.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+1,3,female,19.0,1,0,7.8542,S,Southampton,False,0,2,0,2.180891922715322,Young Adult
+1,2,male,3.0,1,1,26.0,S,Southampton,False,1,3,0,3.295836866004329,Child
+1,1,female,44.0,0,0,27.7208,C,Cherbourg,True,1,1,1,3.357621598945279,Adult
+1,1,female,58.0,0,0,146.5208,C,Cherbourg,True,1,1,1,4.993969182787072,Adult
+0,3,male,42.0,0,1,8.4042,S,Southampton,False,0,2,0,2.2411563979973974,Adult
+0,2,female,24.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,3,male,28.0,0,0,9.5,S,Southampton,True,0,1,1,2.3513752571634776,Young Adult
+0,3,male,34.0,0,0,6.4958,S,Southampton,True,0,1,1,2.0143428636837015,Young Adult
+0,3,male,45.5,0,0,7.225,C,Cherbourg,True,0,1,1,2.1071782966514356,Adult
+1,3,male,18.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Teen
+0,3,female,2.0,0,1,10.4625,S,Southampton,False,1,2,0,2.4390808375825834,Child
+0,3,male,32.0,1,0,15.85,S,Southampton,False,0,2,0,2.8243506567983707,Young Adult
+1,3,male,26.0,0,0,18.7875,C,Cherbourg,True,0,1,1,2.9850504252071306,Young Adult
+1,3,female,16.0,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Teen
+1,1,male,40.0,0,0,31.0,C,Cherbourg,True,1,1,1,3.4657359027997265,Adult
+0,3,male,24.0,0,0,7.05,S,Southampton,True,0,1,1,2.0856720914304723,Young Adult
+1,2,female,35.0,0,0,21.0,S,Southampton,True,0,1,1,3.091042453358316,Young Adult
+0,3,male,22.0,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,Young Adult
+0,3,male,,1,0,7.75,Q,Queenstown,False,0,2,0,2.169053700369523,
+1,1,female,31.0,1,0,113.275,C,Cherbourg,False,1,2,0,4.738607824217808,Young Adult
+1,3,female,27.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Young Adult
+0,2,male,42.0,1,0,27.0,S,Southampton,False,0,2,0,3.332204510175204,Adult
+1,1,female,32.0,0,0,76.2917,C,Cherbourg,True,1,1,1,4.347586575960343,Young Adult
+0,2,male,30.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+1,3,male,16.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Teen
+0,2,male,27.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,3,male,51.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Adult
+1,1,male,38.0,1,0,90.0,S,Southampton,False,1,2,0,4.51085950651685,Adult
+0,3,male,22.0,0,0,9.35,S,Southampton,True,0,1,1,2.336986519711378,Young Adult
+1,2,male,19.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,3,male,20.5,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,Young Adult
+0,2,male,18.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Teen
+0,3,female,,3,1,25.4667,S,Southampton,False,0,5,0,3.275887339030031,
+1,1,female,35.0,1,0,83.475,S,Southampton,False,1,2,0,4.436455632600354,Young Adult
+0,3,male,29.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Young Adult
+0,2,male,59.0,0,0,13.5,S,Southampton,True,0,1,1,2.6741486494265287,Adult
+1,3,female,5.0,4,2,31.3875,S,Southampton,False,0,7,0,3.4777725458882283,Child
+0,2,male,24.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,3,female,,0,0,7.55,S,Southampton,True,0,1,1,2.145931282948669,
+0,2,male,44.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Adult
+1,2,female,8.0,0,2,26.25,S,Southampton,False,0,3,0,3.305053521109253,Child
+0,2,male,19.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,2,male,33.0,0,0,12.275,S,Southampton,True,0,1,1,2.5858825671280026,Young Adult
+0,3,female,,1,0,14.4542,C,Cherbourg,False,0,2,0,2.737880811060884,
+0,2,male,29.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,3,male,22.0,0,0,7.125,S,Southampton,True,0,1,1,2.094945728215801,Young Adult
+0,3,male,30.0,0,0,7.225,C,Cherbourg,True,0,1,1,2.1071782966514356,Young Adult
+0,1,male,44.0,2,0,90.0,Q,Queenstown,False,1,3,0,4.51085950651685,Adult
+0,3,female,25.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Young Adult
+1,2,female,24.0,0,2,14.5,S,Southampton,False,0,3,0,2.740840023925201,Young Adult
+1,1,male,37.0,1,1,52.5542,S,Southampton,False,1,3,0,3.9806942251907276,Adult
+0,2,male,54.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Adult
+0,3,male,,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,
+0,3,female,29.0,1,1,10.4625,S,Southampton,False,1,3,0,2.4390808375825834,Young Adult
+0,1,male,62.0,0,0,26.55,S,Southampton,True,1,1,1,3.3160025355989236,Senior
+0,3,male,30.0,1,0,16.1,S,Southampton,False,0,2,0,2.8390784635086144,Young Adult
+0,3,female,41.0,0,2,20.2125,S,Southampton,False,0,3,0,3.0545906305603445,Adult
+1,3,female,29.0,0,2,15.2458,C,Cherbourg,False,0,3,0,2.7878344138303452,Young Adult
+1,1,female,,0,0,79.2,C,Cherbourg,True,0,1,1,4.384523514872469,
+1,1,female,30.0,0,0,86.5,S,Southampton,True,1,1,1,4.471638793363569,Young Adult
+1,1,female,35.0,0,0,512.3292,C,Cherbourg,True,0,1,1,6.240917354759096,Young Adult
+1,2,female,50.0,0,1,26.0,S,Southampton,False,0,2,0,3.295836866004329,Adult
+1,3,male,3.0,4,2,31.3875,S,Southampton,False,0,7,0,3.4777725458882283,Child
+0,1,male,52.0,1,1,79.65,S,Southampton,False,1,3,0,4.390118804571218,Adult
+0,1,male,40.0,0,0,0.0,S,Southampton,True,1,1,1,0.0,Adult
+0,3,female,,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,
+0,2,male,36.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Adult
+0,3,male,16.0,4,1,39.6875,S,Southampton,False,0,6,0,3.705920919968788,Teen
+1,3,male,25.0,1,0,7.775,S,Southampton,False,0,2,0,2.1719067693519296,Young Adult
+1,1,female,58.0,0,1,153.4625,S,Southampton,False,1,2,0,5.039951348430309,Adult
+1,1,female,35.0,0,0,135.6333,S,Southampton,True,1,1,1,4.91730069488021,Young Adult
+0,1,male,,0,0,31.0,S,Southampton,True,0,1,1,3.4657359027997265,
+1,3,male,25.0,0,0,0.0,S,Southampton,True,0,1,1,0.0,Young Adult
+1,2,female,41.0,0,1,19.5,S,Southampton,False,0,2,0,3.0204248861443626,Adult
+0,1,male,37.0,0,1,29.7,C,Cherbourg,False,1,2,0,3.4242626545931514,Adult
+1,1,female,63.0,1,0,77.9583,S,Southampton,False,1,2,0,4.368919865004903,Senior
+0,3,female,45.0,0,0,7.75,S,Southampton,True,0,1,1,2.169053700369523,Adult
+0,2,male,,0,0,0.0,S,Southampton,True,0,1,1,0.0,
+0,3,male,7.0,4,1,29.125,Q,Queenstown,False,0,6,0,3.405355391810819,Child
+1,3,female,35.0,1,1,20.25,S,Southampton,False,0,3,0,3.056356895370426,Young Adult
+0,3,male,65.0,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Senior
+0,3,male,28.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Young Adult
+0,3,male,16.0,0,0,9.5,S,Southampton,True,0,1,1,2.3513752571634776,Teen
+1,3,male,19.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,1,male,,0,0,26.0,S,Southampton,True,1,1,1,3.295836866004329,
+0,3,male,33.0,0,0,8.6625,C,Cherbourg,True,0,1,1,2.2682524139135403,Young Adult
+1,3,male,30.0,0,0,9.5,S,Southampton,True,0,1,1,2.3513752571634776,Young Adult
+0,3,male,22.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+1,2,male,42.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+1,3,female,22.0,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Young Adult
+1,1,female,26.0,0,0,78.85,S,Southampton,True,0,1,1,4.380149874661021,Young Adult
+1,1,female,19.0,1,0,91.0792,C,Cherbourg,False,1,2,0,4.5226490762785785,Young Adult
+0,2,male,36.0,0,0,12.875,C,Cherbourg,True,1,1,1,2.630088659632498,Adult
+0,3,female,24.0,0,0,8.85,S,Southampton,True,0,1,1,2.2874714551839976,Young Adult
+0,3,male,24.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+0,3,male,23.5,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,Young Adult
+0,1,female,2.0,1,2,151.55,S,Southampton,False,1,4,0,5.027492411162679,Child
+1,1,male,,0,0,30.5,S,Southampton,True,1,1,1,3.449987545831587,
+1,1,female,50.0,0,1,247.5208,C,Cherbourg,False,1,2,0,5.515526544247129,Adult
+1,3,male,,2,0,23.25,Q,Queenstown,False,0,3,0,3.188416617383492,
+0,3,male,19.0,0,0,0.0,S,Southampton,True,0,1,1,0.0,Young Adult
+1,2,female,,0,0,12.35,Q,Queenstown,True,1,1,1,2.5915163848462583,
+1,1,male,0.92,1,2,151.55,S,Southampton,False,1,4,0,5.027492411162679,Child
+1,1,female,,0,0,110.8833,C,Cherbourg,True,0,1,1,4.717456363787216,
+1,1,female,17.0,1,0,108.9,C,Cherbourg,False,1,2,0,4.699570861409576,Teen
+0,2,male,30.0,1,0,24.0,C,Cherbourg,False,0,2,0,3.2188758248682006,Young Adult
+1,1,female,30.0,0,0,56.9292,C,Cherbourg,True,1,1,1,4.0592215752427645,Young Adult
+1,1,female,24.0,0,0,83.1583,C,Cherbourg,True,1,1,1,4.432699549165613,Young Adult
+1,1,female,18.0,2,2,262.375,C,Cherbourg,False,1,5,0,5.5735788721243535,Teen
+0,2,female,26.0,1,1,26.0,S,Southampton,False,0,3,0,3.295836866004329,Young Adult
+0,2,male,43.0,1,1,26.25,S,Southampton,False,0,3,0,3.305053521109253,Adult
+1,3,female,26.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Young Adult
+1,2,female,24.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Young Adult
+0,2,male,54.0,0,0,14.0,S,Southampton,True,0,1,1,2.70805020110221,Adult
+1,1,female,31.0,0,2,164.8667,S,Southampton,False,1,3,0,5.11118445372147,Young Adult
+1,1,female,40.0,1,1,134.5,C,Cherbourg,False,1,3,0,4.908971640319756,Adult
+0,3,male,27.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+1,2,female,30.0,0,0,12.35,Q,Queenstown,True,0,1,1,2.5915163848462583,Young Adult
+1,2,female,22.0,1,1,29.0,S,Southampton,False,0,3,0,3.4011973816621555,Young Adult
+1,1,female,36.0,0,0,135.6333,C,Cherbourg,True,1,1,1,4.91730069488021,Adult
+0,3,male,61.0,0,0,6.2375,S,Southampton,True,0,1,1,1.9792758428991135,Senior
+1,2,female,36.0,0,0,13.0,S,Southampton,True,1,1,1,2.6390573296152584,Adult
+1,3,female,31.0,1,1,20.525,S,Southampton,False,0,3,0,3.0692150503137943,Young Adult
+1,1,female,16.0,0,1,57.9792,C,Cherbourg,False,1,2,0,4.077184839375167,Teen
+1,3,female,,2,0,23.25,Q,Queenstown,False,0,3,0,3.188416617383492,
+0,1,male,45.5,0,0,28.5,S,Southampton,True,1,1,1,3.3843902633457743,Adult
+0,1,male,38.0,0,1,153.4625,S,Southampton,False,1,2,0,5.039951348430309,Adult
+0,3,male,16.0,2,0,18.0,S,Southampton,False,0,3,0,2.9444389791664403,Teen
+1,1,female,,1,0,133.65,S,Southampton,False,0,2,0,4.902678819257608,
+0,1,male,29.0,1,0,66.6,S,Southampton,False,1,2,0,4.213607983048918,Young Adult
+1,1,female,41.0,0,0,134.5,C,Cherbourg,True,1,1,1,4.908971640319756,Adult
+1,3,male,45.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Adult
+0,1,male,45.0,0,0,35.5,S,Southampton,True,0,1,1,3.597312260588446,Adult
+1,2,male,2.0,1,1,26.0,S,Southampton,False,1,3,0,3.295836866004329,Child
+1,1,female,24.0,3,2,263.0,S,Southampton,False,1,6,0,5.575949103146316,Young Adult
+0,2,male,28.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,2,male,36.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+1,2,female,24.0,0,0,13.0,S,Southampton,True,1,1,1,2.6390573296152584,Young Adult
+1,2,female,40.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+1,3,female,,1,0,16.1,S,Southampton,False,0,2,0,2.8390784635086144,
+1,3,male,3.0,1,1,15.9,S,Southampton,False,0,3,0,2.8273136219290276,Child
+0,3,male,42.0,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,Adult
+0,3,male,23.0,0,0,9.225,S,Southampton,True,0,1,1,2.3248357019288655,Young Adult
+0,1,male,,0,0,35.0,S,Southampton,True,1,1,1,3.58351893845611,
+0,3,male,15.0,1,1,7.2292,C,Cherbourg,False,0,3,0,2.1076888046179385,Teen
+0,3,male,25.0,1,0,17.8,S,Southampton,False,0,2,0,2.9338568698359038,Young Adult
+1,1,female,22.0,0,1,55.0,S,Southampton,False,1,2,0,4.02535169073515,Young Adult
+0,2,female,38.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+0,3,male,40.0,1,4,27.9,S,Southampton,False,0,6,0,3.3638415951183864,Adult
+0,2,male,29.0,1,0,27.7208,C,Cherbourg,False,0,2,0,3.357621598945279,Young Adult
+0,3,female,45.0,0,1,14.4542,C,Cherbourg,False,0,2,0,2.737880811060884,Adult
+0,3,male,35.0,0,0,7.05,S,Southampton,True,0,1,1,2.0856720914304723,Young Adult
+0,3,male,30.0,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,Young Adult
+1,1,female,60.0,1,0,75.25,C,Cherbourg,False,1,2,0,4.334017415487521,Adult
+1,3,female,,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,
+1,1,female,24.0,0,0,69.3,C,Cherbourg,True,1,1,1,4.252771798816619,Young Adult
+1,1,male,25.0,1,0,55.4417,C,Cherbourg,False,1,2,0,4.0332082470129285,Young Adult
+0,3,male,18.0,1,0,6.4958,S,Southampton,False,0,2,0,2.0143428636837015,Teen
+0,3,male,19.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,1,male,22.0,0,0,135.6333,C,Cherbourg,True,0,1,1,4.91730069488021,Young Adult
+0,3,female,3.0,3,1,21.075,S,Southampton,False,0,5,0,3.0944457464900235,Child
+1,1,female,,1,0,82.1708,C,Cherbourg,False,0,2,0,4.420896324687287,
+1,3,female,22.0,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,Young Adult
+0,1,male,27.0,0,2,211.5,C,Cherbourg,False,1,3,0,5.358941988364472,Young Adult
+0,3,male,20.0,0,0,4.0125,C,Cherbourg,True,0,1,1,1.6119347926326877,Young Adult
+0,3,male,19.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Young Adult
+1,1,female,42.0,0,0,227.525,C,Cherbourg,True,0,1,1,5.4316456135398825,Adult
+1,3,female,1.0,0,2,15.7417,C,Cherbourg,False,0,3,0,2.817902613071225,Child
+0,3,male,32.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Young Adult
+1,1,female,35.0,1,0,52.0,S,Southampton,False,0,2,0,3.970291913552122,Young Adult
+0,2,male,18.0,0,0,73.5,S,Southampton,True,0,1,1,4.310799125385514,Teen
+0,3,male,1.0,5,2,46.9,S,Southampton,False,0,8,0,3.8691155044168695,Child
+1,2,female,36.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+0,3,male,,0,0,7.7292,Q,Queenstown,True,0,1,1,2.1666737276227077,
+1,2,female,17.0,0,0,12.0,C,Cherbourg,True,0,1,1,2.5649493574615367,Teen
+1,1,male,36.0,1,2,120.0,S,Southampton,False,1,4,0,4.795790545596741,Adult
+1,3,male,21.0,0,0,7.7958,S,Southampton,True,0,1,1,2.174274334826008,Young Adult
+0,3,male,28.0,2,0,7.925,S,Southampton,False,0,3,0,2.188856327665703,Young Adult
+1,1,female,23.0,1,0,113.275,C,Cherbourg,False,1,2,0,4.738607824217808,Young Adult
+1,3,female,24.0,0,2,16.7,S,Southampton,False,1,3,0,2.8735646395797834,Young Adult
+0,3,male,22.0,0,0,7.7958,S,Southampton,True,0,1,1,2.174274334826008,Young Adult
+0,3,female,31.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Young Adult
+0,2,male,46.0,0,0,26.0,S,Southampton,True,0,1,1,3.295836866004329,Adult
+0,2,male,23.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+1,2,female,28.0,0,0,12.65,S,Southampton,True,0,1,1,2.613739521630969,Young Adult
+1,3,male,39.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Adult
+0,3,male,26.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,3,female,21.0,1,0,9.825,S,Southampton,False,0,2,0,2.3818582738885534,Young Adult
+0,3,male,28.0,1,0,15.85,S,Southampton,False,0,2,0,2.8243506567983707,Young Adult
+0,3,female,20.0,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,Young Adult
+0,2,male,34.0,1,0,21.0,S,Southampton,False,0,2,0,3.091042453358316,Young Adult
+0,3,male,51.0,0,0,7.75,S,Southampton,True,0,1,1,2.169053700369523,Adult
+1,2,male,3.0,1,1,18.75,S,Southampton,False,0,3,0,2.9831534913471307,Child
+0,3,male,21.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Young Adult
+0,3,male,,0,0,6.8583,Q,Queenstown,True,0,1,1,2.061570298060867,
+1,1,female,33.0,1,0,90.0,Q,Queenstown,False,1,2,0,4.51085950651685,Young Adult
+1,3,male,44.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Adult
+0,3,female,,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,
+1,2,female,34.0,1,1,32.5,S,Southampton,False,0,3,0,3.5115454388310208,Young Adult
+1,2,female,18.0,0,2,13.0,S,Southampton,False,0,3,0,2.6390573296152584,Teen
+0,3,female,10.0,0,2,24.15,S,Southampton,False,0,3,0,3.224857896545748,Child
+0,3,male,21.0,0,0,7.7333,Q,Queenstown,True,0,1,1,2.167143305297764,Young Adult
+0,3,male,29.0,0,0,7.875,S,Southampton,True,0,1,1,2.1832383353614797,Young Adult
+0,3,female,28.0,1,1,14.4,S,Southampton,False,0,3,0,2.7343675094195836,Young Adult
+0,3,male,18.0,1,1,20.2125,S,Southampton,False,0,3,0,3.0545906305603445,Teen
+1,2,female,28.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Young Adult
+1,2,female,19.0,0,0,26.0,S,Southampton,True,0,1,1,3.295836866004329,Young Adult
+1,3,male,32.0,0,0,8.05,S,Southampton,True,1,1,1,2.2027647577118348,Young Adult
+1,1,male,28.0,0,0,26.55,S,Southampton,True,1,1,1,3.3160025355989236,Young Adult
+1,2,female,42.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Adult
+0,3,male,17.0,0,0,7.125,S,Southampton,True,0,1,1,2.094945728215801,Teen
+0,1,male,50.0,1,0,55.9,S,Southampton,False,1,2,0,4.041295341132285,Adult
+1,1,female,14.0,1,2,120.0,S,Southampton,False,1,4,0,4.795790545596741,Teen
+0,3,female,21.0,2,2,34.375,S,Southampton,False,0,5,0,3.5660053559634015,Young Adult
+1,2,female,24.0,2,3,18.75,S,Southampton,False,0,6,0,2.9831534913471307,Young Adult
+0,1,male,64.0,1,4,263.0,S,Southampton,False,1,6,0,5.575949103146316,Senior
+0,2,male,31.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+1,2,female,45.0,1,1,26.25,S,Southampton,False,0,3,0,3.305053521109253,Adult
+0,3,male,20.0,0,0,9.5,S,Southampton,True,0,1,1,2.3513752571634776,Young Adult
+0,3,male,25.0,1,0,7.775,S,Southampton,False,0,2,0,2.1719067693519296,Young Adult
+1,2,female,28.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+1,3,male,,0,0,8.1125,S,Southampton,True,0,1,1,2.2096470973347766,
+1,1,male,4.0,0,2,81.8583,S,Southampton,False,1,3,0,4.417131919904876,Child
+1,2,female,13.0,0,1,19.5,S,Southampton,False,0,2,0,3.0204248861443626,Teen
+1,1,male,34.0,0,0,26.55,S,Southampton,True,0,1,1,3.3160025355989236,Young Adult
+1,3,female,5.0,2,1,19.2583,C,Cherbourg,False,0,4,0,3.0085645861193133,Child
+1,1,male,52.0,0,0,30.5,S,Southampton,True,1,1,1,3.449987545831587,Adult
+0,2,male,36.0,1,2,27.75,S,Southampton,False,0,4,0,3.3586377672433594,Adult
+0,3,male,,1,0,19.9667,S,Southampton,False,0,2,0,3.0429354648621407,
+0,1,male,30.0,0,0,27.75,C,Cherbourg,True,1,1,1,3.3586377672433594,Young Adult
+1,1,male,49.0,1,0,89.1042,C,Cherbourg,False,1,2,0,4.500966778400217,Adult
+1,3,male,29.0,0,0,7.8958,C,Cherbourg,True,0,1,1,2.1855792552411137,Young Adult
+0,1,male,65.0,0,0,26.55,S,Southampton,True,1,1,1,3.3160025355989236,Senior
+1,1,female,,1,0,51.8625,S,Southampton,False,1,2,0,3.967694202798607,
+1,2,female,50.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Adult
+1,1,male,48.0,0,0,26.55,S,Southampton,True,1,1,1,3.3160025355989236,Adult
+0,3,male,34.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,1,male,47.0,0,0,38.5,S,Southampton,True,1,1,1,3.676300671907076,Adult
+0,2,male,48.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+0,3,male,38.0,0,0,7.05,S,Southampton,True,0,1,1,2.0856720914304723,Adult
+0,1,male,56.0,0,0,26.55,S,Southampton,True,0,1,1,3.3160025355989236,Adult
+0,3,male,,0,0,7.725,Q,Queenstown,True,0,1,1,2.1661924680884908,
+1,3,female,0.75,2,1,19.2583,C,Cherbourg,False,0,4,0,3.0085645861193133,Child
+0,3,male,38.0,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,Adult
+1,2,female,33.0,1,2,27.75,S,Southampton,False,0,4,0,3.3586377672433594,Young Adult
+1,2,female,23.0,0,0,13.7917,C,Cherbourg,True,1,1,1,2.694066212646058,Young Adult
+0,3,female,22.0,0,0,9.8375,S,Southampton,True,0,1,1,2.3830123421066602,Young Adult
+0,1,male,,0,0,52.0,S,Southampton,True,1,1,1,3.970291913552122,
+0,3,male,29.0,1,0,7.0458,S,Southampton,False,0,2,0,2.0851502161468174,Young Adult
+0,3,male,22.0,0,0,7.5208,S,Southampton,True,0,1,1,2.142510233146819,Young Adult
+1,3,female,2.0,0,1,12.2875,S,Southampton,False,0,2,0,2.586823743668066,Child
+0,3,male,9.0,5,2,46.9,S,Southampton,False,0,8,0,3.8691155044168695,Child
+0,3,male,50.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Adult
+1,3,female,63.0,0,0,9.5875,S,Southampton,True,0,1,1,2.3596740599781727,Senior
+1,1,male,25.0,1,0,91.0792,C,Cherbourg,False,1,2,0,4.5226490762785785,Young Adult
+1,1,female,35.0,1,0,90.0,S,Southampton,False,1,2,0,4.51085950651685,Young Adult
+0,1,male,58.0,0,0,29.7,C,Cherbourg,True,1,1,1,3.4242626545931514,Adult
+1,3,male,9.0,1,1,15.9,S,Southampton,False,0,3,0,2.8273136219290276,Child
+0,3,male,21.0,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,Young Adult
+0,1,male,55.0,0,0,30.5,S,Southampton,True,1,1,1,3.449987545831587,Adult
+0,1,male,71.0,0,0,49.5042,C,Cherbourg,True,0,1,1,3.922056501139853,Senior
+0,3,male,,0,0,14.4583,C,Cherbourg,True,0,1,1,2.738146075922933,
+1,1,female,54.0,1,0,78.2667,C,Cherbourg,False,1,2,0,4.37281811610993,Adult
+0,3,male,,0,0,15.1,S,Southampton,True,0,1,1,2.7788192719904172,
+0,1,female,25.0,1,2,151.55,S,Southampton,False,1,4,0,5.027492411162679,Young Adult
+0,3,male,24.0,0,0,7.7958,S,Southampton,True,0,1,1,2.174274334826008,Young Adult
+0,3,female,21.0,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Young Adult
+0,3,female,,0,0,7.6292,Q,Queenstown,True,0,1,1,2.155151800914312,
+0,3,female,37.0,0,0,9.5875,S,Southampton,True,0,1,1,2.3596740599781727,Adult
+1,1,female,16.0,0,0,86.5,S,Southampton,True,1,1,1,4.471638793363569,Teen
+0,1,male,18.0,1,0,108.9,C,Cherbourg,False,1,2,0,4.699570861409576,Teen
+1,2,female,33.0,0,2,26.0,S,Southampton,False,0,3,0,3.295836866004329,Young Adult
+1,1,male,,0,0,26.55,S,Southampton,True,0,1,1,3.3160025355989236,
+0,3,male,28.0,0,0,22.525,S,Southampton,True,0,1,1,3.1580636854714434,Young Adult
+1,3,male,26.0,0,0,56.4958,S,Southampton,True,0,1,1,4.05171190165724,Young Adult
+1,3,male,29.0,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Young Adult
+1,1,male,36.0,0,0,26.2875,S,Southampton,True,1,1,1,3.3064287218760624,Adult
+1,1,female,54.0,1,0,59.4,C,Cherbourg,False,0,2,0,4.100989104940769,Adult
+0,3,male,24.0,0,0,7.4958,S,Southampton,True,0,1,1,2.139571923732859,Young Adult
+0,1,male,47.0,0,0,34.0208,S,Southampton,True,1,1,1,3.5559421706858756,Adult
+1,2,female,34.0,0,0,10.5,S,Southampton,True,1,1,1,2.4423470353692043,Young Adult
+0,3,male,,0,0,24.15,Q,Queenstown,True,0,1,1,3.224857896545748,
+1,2,female,36.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Adult
+0,3,male,32.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+1,1,female,30.0,0,0,93.5,S,Southampton,True,1,1,1,4.548599834499697,Young Adult
+1,1,female,44.0,0,1,57.9792,C,Cherbourg,False,1,2,0,4.077184839375167,Adult
+0,3,male,,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,
+0,3,male,40.5,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Adult
+0,1,male,,0,0,221.7792,S,Southampton,True,1,1,1,5.406181146423973,
+0,3,male,39.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Adult
+0,2,male,23.0,2,1,11.5,S,Southampton,False,0,4,0,2.5257286443082556,Young Adult
+1,2,female,2.0,1,1,26.0,S,Southampton,False,0,3,0,3.295836866004329,Child
+0,3,male,17.0,1,1,7.2292,C,Cherbourg,False,0,3,0,2.1076888046179385,Teen
+1,3,female,,0,2,22.3583,C,Cherbourg,False,0,3,0,3.1509523813392697,
+0,3,female,30.0,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,Young Adult
+1,2,female,7.0,0,2,26.25,S,Southampton,False,0,3,0,3.305053521109253,Child
+0,1,male,45.0,0,0,26.55,S,Southampton,True,1,1,1,3.3160025355989236,Adult
+1,1,female,30.0,0,0,106.425,C,Cherbourg,True,0,1,1,4.676792929661059,Young Adult
+0,3,male,,0,0,14.5,S,Southampton,True,0,1,1,2.740840023925201,
+1,1,female,22.0,0,2,49.5,C,Cherbourg,False,1,3,0,3.9219733362813143,Young Adult
+1,1,female,36.0,0,2,71.0,S,Southampton,False,1,3,0,4.276666119016055,Adult
+0,3,female,9.0,4,2,31.275,S,Southampton,False,0,7,0,3.4742929367327062,Child
+0,3,female,11.0,4,2,31.275,S,Southampton,False,0,7,0,3.4742929367327062,Child
+1,2,male,32.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Young Adult
+0,1,male,50.0,1,0,106.425,C,Cherbourg,False,1,2,0,4.676792929661059,Adult
+0,1,male,64.0,0,0,26.0,S,Southampton,True,0,1,1,3.295836866004329,Senior
+1,2,female,19.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Young Adult
+1,2,male,,0,0,13.8625,C,Cherbourg,True,0,1,1,2.6988412620169004,
+0,3,male,33.0,1,1,20.525,S,Southampton,False,0,3,0,3.0692150503137943,Young Adult
+1,2,male,8.0,1,1,36.75,S,Southampton,False,0,3,0,3.6309854756950335,Child
+1,1,male,17.0,0,2,110.8833,C,Cherbourg,False,1,3,0,4.717456363787216,Teen
+0,2,male,27.0,0,0,26.0,S,Southampton,True,0,1,1,3.295836866004329,Young Adult
+0,3,male,,0,0,7.8292,Q,Queenstown,True,0,1,1,2.17806441028492,
+1,3,male,22.0,0,0,7.225,C,Cherbourg,True,0,1,1,2.1071782966514356,Young Adult
+1,3,female,22.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Young Adult
+0,1,male,62.0,0,0,26.55,S,Southampton,True,0,1,1,3.3160025355989236,Senior
+1,1,female,48.0,1,0,39.6,C,Cherbourg,False,1,2,0,3.703768066607687,Adult
+0,1,male,,0,0,227.525,C,Cherbourg,True,0,1,1,5.4316456135398825,
+1,1,female,39.0,1,1,79.65,S,Southampton,False,1,3,0,4.390118804571218,Adult
+1,3,female,36.0,1,0,17.4,S,Southampton,False,0,2,0,2.91235066461494,Adult
+0,3,male,40.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Adult
+0,2,male,28.0,0,0,13.5,S,Southampton,True,0,1,1,2.6741486494265287,Young Adult
+0,3,male,24.0,2,0,24.15,S,Southampton,False,0,3,0,3.224857896545748,Young Adult
+0,3,male,19.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+0,3,female,29.0,0,4,21.075,S,Southampton,False,0,5,0,3.0944457464900235,Young Adult
+1,3,male,32.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Young Adult
+1,2,male,62.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Senior
+1,1,female,53.0,2,0,51.4792,S,Southampton,False,1,3,0,3.960416900617205,Adult
+1,1,male,36.0,0,0,26.3875,S,Southampton,True,1,1,1,3.3100867049215847,Adult
+0,3,male,16.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Teen
+0,3,male,19.0,0,0,14.5,S,Southampton,True,0,1,1,2.740840023925201,Young Adult
+1,2,female,34.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+1,1,female,39.0,1,0,55.9,S,Southampton,False,1,2,0,4.041295341132285,Adult
+0,3,female,,1,0,14.4583,C,Cherbourg,False,0,2,0,2.738146075922933,
+1,3,male,32.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Young Adult
+1,2,female,25.0,1,1,30.0,S,Southampton,False,0,3,0,3.4339872044851463,Young Adult
+1,1,female,39.0,1,1,110.8833,C,Cherbourg,False,1,3,0,4.717456363787216,Adult
+0,2,male,54.0,0,0,26.0,S,Southampton,True,0,1,1,3.295836866004329,Adult
+0,1,male,36.0,0,0,40.125,C,Cherbourg,True,1,1,1,3.716616209085536,Adult
+0,3,male,,0,0,8.7125,C,Cherbourg,True,0,1,1,2.2734137156937657,
+1,1,female,18.0,0,2,79.65,S,Southampton,False,1,3,0,4.390118804571218,Teen
+0,2,male,47.0,0,0,15.0,S,Southampton,True,0,1,1,2.772588722239781,Adult
+1,1,male,60.0,1,1,79.2,C,Cherbourg,False,1,3,0,4.384523514872469,Adult
+0,3,male,35.0,0,0,7.125,S,Southampton,True,0,1,1,2.094945728215801,Young Adult
+1,1,female,52.0,1,0,78.2667,C,Cherbourg,False,1,2,0,4.37281811610993,Adult
+0,3,male,47.0,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,Adult
+0,3,female,,0,2,7.75,Q,Queenstown,False,0,3,0,2.169053700369523,
+0,2,male,37.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Adult
+0,3,male,36.0,1,1,24.15,S,Southampton,False,0,3,0,3.224857896545748,Adult
+1,2,female,,0,0,33.0,S,Southampton,True,0,1,1,3.5263605246161616,
+0,3,male,49.0,0,0,0.0,S,Southampton,True,0,1,1,0.0,Adult
+1,1,male,49.0,1,0,56.9292,C,Cherbourg,False,1,2,0,4.0592215752427645,Adult
+1,2,female,24.0,2,1,27.0,S,Southampton,False,0,4,0,3.332204510175204,Young Adult
+0,1,male,,0,0,42.4,S,Southampton,True,0,1,1,3.770459441106359,
+0,3,male,44.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Adult
+1,1,male,35.0,0,0,26.55,C,Cherbourg,True,0,1,1,3.3160025355989236,Young Adult
+0,3,male,36.0,1,0,15.55,S,Southampton,False,0,2,0,2.806386101823072,Adult
+0,3,male,30.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+1,1,male,27.0,0,0,30.5,S,Southampton,True,0,1,1,3.449987545831587,Young Adult
+1,2,female,22.0,1,2,41.5792,C,Cherbourg,False,0,4,0,3.7513658711253766,Young Adult
+1,1,female,40.0,0,0,153.4625,S,Southampton,True,1,1,1,5.039951348430309,Adult
+0,3,female,39.0,1,5,31.275,S,Southampton,False,0,7,0,3.4742929367327062,Adult
+0,3,male,,0,0,7.05,S,Southampton,True,0,1,1,2.0856720914304723,
+1,2,female,24.0,1,2,65.0,S,Southampton,False,0,4,0,4.189654742026425,Young Adult
+0,3,male,34.0,1,1,14.4,S,Southampton,False,0,3,0,2.7343675094195836,Young Adult
+0,3,female,26.0,1,0,16.1,S,Southampton,False,0,2,0,2.8390784635086144,Young Adult
+1,2,female,4.0,2,1,39.0,S,Southampton,False,1,4,0,3.6888794541139363,Child
+0,2,male,26.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,3,male,27.0,1,0,14.4542,C,Cherbourg,False,0,2,0,2.737880811060884,Young Adult
+1,1,male,42.0,1,0,52.5542,S,Southampton,False,1,2,0,3.9806942251907276,Adult
+1,3,male,20.0,1,1,15.7417,C,Cherbourg,False,0,3,0,2.817902613071225,Young Adult
+0,3,male,21.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Young Adult
+0,3,male,21.0,0,0,16.1,S,Southampton,True,0,1,1,2.8390784635086144,Young Adult
+0,1,male,61.0,0,0,32.3208,S,Southampton,True,1,1,1,3.5061818266142577,Senior
+0,2,male,57.0,0,0,12.35,Q,Queenstown,True,0,1,1,2.5915163848462583,Adult
+1,1,female,21.0,0,0,77.9583,S,Southampton,True,1,1,1,4.368919865004903,Young Adult
+0,3,male,26.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+0,3,male,,0,0,7.7333,Q,Queenstown,True,0,1,1,2.167143305297764,
+1,1,male,80.0,0,0,30.0,S,Southampton,True,1,1,1,3.4339872044851463,Senior
+0,3,male,51.0,0,0,7.0542,S,Southampton,True,0,1,1,2.086193694502369,Adult
+1,1,male,32.0,0,0,30.5,C,Cherbourg,True,1,1,1,3.449987545831587,Young Adult
+0,1,male,,0,0,0.0,S,Southampton,True,0,1,1,0.0,
+0,3,female,9.0,3,2,27.9,S,Southampton,False,0,6,0,3.3638415951183864,Child
+0,2,male,31.0,1,1,26.25,S,Southampton,False,0,3,0,3.305053521109253,Young Adult
+0,3,female,41.0,0,5,39.6875,S,Southampton,False,0,6,0,3.705920919968788,Adult
+0,3,male,,1,0,16.1,S,Southampton,False,0,2,0,2.8390784635086144,
+0,3,female,2.0,3,2,27.9,S,Southampton,False,0,6,0,3.3638415951183864,Child
+1,3,male,,0,0,56.4958,S,Southampton,True,0,1,1,4.05171190165724,
+1,1,male,48.0,1,0,76.7292,C,Cherbourg,False,1,2,0,4.353230991152628,Adult
+1,1,male,56.0,0,0,35.5,C,Cherbourg,True,1,1,1,3.597312260588446,Adult
+0,3,male,,0,0,7.55,S,Southampton,True,0,1,1,2.145931282948669,
+1,3,female,23.0,0,0,7.55,S,Southampton,True,0,1,1,2.145931282948669,Young Adult
+1,2,female,18.0,0,1,23.0,S,Southampton,False,0,2,0,3.1780538303479458,Teen
+0,3,male,21.0,0,0,8.4333,S,Southampton,True,0,1,1,2.2442459824059346,Young Adult
+1,3,female,,0,0,7.8292,Q,Queenstown,True,0,1,1,2.17806441028492,
+0,3,female,18.0,0,0,6.75,Q,Queenstown,True,0,1,1,2.0476928433652555,Teen
+0,2,male,24.0,2,0,73.5,S,Southampton,False,0,3,0,4.310799125385514,Young Adult
+0,3,female,32.0,1,1,15.5,Q,Queenstown,False,0,3,0,2.803360380906535,Young Adult
+0,2,male,23.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,1,male,58.0,0,2,113.275,C,Cherbourg,False,1,3,0,4.738607824217808,Adult
+1,1,male,50.0,2,0,133.65,S,Southampton,False,0,3,0,4.902678819257608,Adult
+0,3,male,40.0,0,0,7.225,C,Cherbourg,True,0,1,1,2.1071782966514356,Adult
+0,1,male,47.0,0,0,25.5875,S,Southampton,True,1,1,1,3.2804411805263554,Adult
+0,3,male,36.0,0,0,7.4958,S,Southampton,True,0,1,1,2.139571923732859,Adult
+1,3,male,20.0,1,0,7.925,S,Southampton,False,0,2,0,2.188856327665703,Young Adult
+0,2,male,32.0,2,0,73.5,S,Southampton,False,0,3,0,4.310799125385514,Young Adult
+0,3,male,,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,
+0,3,male,43.0,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Adult
+1,1,female,,1,0,52.0,S,Southampton,False,1,2,0,3.970291913552122,
+1,2,female,40.0,1,1,39.0,S,Southampton,False,0,3,0,3.6888794541139363,Adult
+0,1,male,31.0,1,0,52.0,S,Southampton,False,1,2,0,3.970291913552122,Young Adult
+0,2,male,70.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Senior
+1,2,male,31.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,3,male,18.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Teen
+0,3,male,24.5,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+1,3,female,18.0,0,0,9.8417,S,Southampton,True,0,1,1,2.3833998102837652,Teen
+0,3,female,43.0,1,6,46.9,S,Southampton,False,0,8,0,3.8691155044168695,Adult
+1,1,male,36.0,0,1,512.3292,C,Cherbourg,False,1,2,0,6.240917354759096,Adult
+0,3,female,,0,0,8.1375,Q,Queenstown,True,0,1,1,2.212386825075897,
+1,1,male,27.0,0,0,76.7292,C,Cherbourg,True,1,1,1,4.353230991152628,Young Adult
+0,3,male,20.0,0,0,9.225,S,Southampton,True,0,1,1,2.3248357019288655,Young Adult
+0,3,male,14.0,5,2,46.9,S,Southampton,False,0,8,0,3.8691155044168695,Teen
+0,2,male,60.0,1,1,39.0,S,Southampton,False,0,3,0,3.6888794541139363,Adult
+0,2,male,25.0,1,2,41.5792,C,Cherbourg,False,0,4,0,3.7513658711253766,Young Adult
+0,3,male,14.0,4,1,39.6875,S,Southampton,False,0,6,0,3.705920919968788,Teen
+0,3,male,19.0,0,0,10.1708,S,Southampton,True,0,1,1,2.4133032309283076,Young Adult
+0,3,male,18.0,0,0,7.7958,S,Southampton,True,0,1,1,2.174274334826008,Teen
+1,1,female,15.0,0,1,211.3375,S,Southampton,False,1,2,0,5.35817698994543,Teen
+1,1,male,31.0,1,0,57.0,S,Southampton,False,1,2,0,4.060443010546419,Young Adult
+1,3,female,4.0,0,1,13.4167,C,Cherbourg,False,0,2,0,2.668387256845834,Child
+0,3,male,25.0,0,0,7.225,C,Cherbourg,True,0,1,1,2.1071782966514356,Young Adult
+0,1,male,60.0,0,0,26.55,S,Southampton,True,0,1,1,3.3160025355989236,Adult
+0,2,male,52.0,0,0,13.5,S,Southampton,True,0,1,1,2.6741486494265287,Adult
+1,3,female,,0,0,7.7333,Q,Queenstown,True,0,1,1,2.167143305297764,
+0,1,male,49.0,1,1,110.8833,C,Cherbourg,False,1,3,0,4.717456363787216,Adult
+0,3,male,42.0,0,0,7.65,S,Southampton,True,1,1,1,2.157559320943788,Adult
+1,1,female,18.0,1,0,227.525,C,Cherbourg,False,1,2,0,5.4316456135398825,Teen
+1,1,male,35.0,0,0,26.2875,S,Southampton,True,1,1,1,3.3064287218760624,Young Adult
+0,3,female,18.0,0,1,14.4542,C,Cherbourg,False,0,2,0,2.737880811060884,Teen
+0,3,male,25.0,0,0,7.7417,Q,Queenstown,True,0,1,1,2.1681046787623672,Young Adult
+0,3,male,26.0,1,0,7.8542,S,Southampton,False,0,2,0,2.180891922715322,Young Adult
+0,2,male,39.0,0,0,26.0,S,Southampton,True,0,1,1,3.295836866004329,Adult
+1,2,female,45.0,0,0,13.5,S,Southampton,True,0,1,1,2.6741486494265287,Adult
+1,1,male,42.0,0,0,26.2875,S,Southampton,True,1,1,1,3.3064287218760624,Adult
+1,1,female,22.0,0,0,151.55,S,Southampton,True,0,1,1,5.027492411162679,Young Adult
+1,1,female,24.0,0,0,49.5042,C,Cherbourg,True,1,1,1,3.922056501139853,Young Adult
+0,1,male,,0,0,26.55,S,Southampton,True,1,1,1,3.3160025355989236,
+1,1,male,48.0,1,0,52.0,S,Southampton,False,1,2,0,3.970291913552122,Adult
+0,3,male,29.0,0,0,9.4833,S,Southampton,True,0,1,1,2.3497835148230464,Young Adult
+0,2,male,52.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+0,3,male,19.0,0,0,7.65,S,Southampton,True,1,1,1,2.157559320943788,Young Adult
+1,1,female,38.0,0,0,227.525,C,Cherbourg,True,1,1,1,5.4316456135398825,Adult
+1,2,female,27.0,0,0,10.5,S,Southampton,True,1,1,1,2.4423470353692043,Young Adult
+0,3,male,,0,0,15.5,Q,Queenstown,True,0,1,1,2.803360380906535,
+0,3,male,33.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Young Adult
+1,2,female,6.0,0,1,33.0,S,Southampton,False,0,2,0,3.5263605246161616,Child
+0,3,male,17.0,1,0,7.0542,S,Southampton,False,0,2,0,2.086193694502369,Teen
+0,2,male,34.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,2,male,50.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+1,1,male,27.0,1,0,53.1,S,Southampton,False,1,2,0,3.9908341858524357,Young Adult
+0,3,male,20.0,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,Young Adult
+1,2,female,30.0,3,0,21.0,S,Southampton,False,0,4,0,3.091042453358316,Young Adult
+1,3,female,,0,0,7.7375,Q,Queenstown,True,0,1,1,2.1676241075599285,
+0,2,male,25.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Young Adult
+0,3,female,25.0,1,0,7.925,S,Southampton,False,0,2,0,2.188856327665703,Young Adult
+1,1,female,29.0,0,0,211.3375,S,Southampton,True,1,1,1,5.35817698994543,Young Adult
+0,3,male,11.0,0,0,18.7875,C,Cherbourg,True,0,1,1,2.9850504252071306,Child
+0,3,male,28.5,0,0,16.1,S,Southampton,True,0,1,1,2.8390784635086144,Young Adult
+0,3,female,48.0,1,3,34.375,S,Southampton,False,0,5,0,3.5660053559634015,Adult
+1,1,male,35.0,0,0,512.3292,C,Cherbourg,True,1,1,1,6.240917354759096,Young Adult
+1,1,male,,0,0,30.0,S,Southampton,True,1,1,1,3.4339872044851463,
+0,1,male,36.0,1,0,78.85,S,Southampton,False,1,2,0,4.380149874661021,Adult
+1,1,female,21.0,2,2,262.375,C,Cherbourg,False,1,5,0,5.5735788721243535,Young Adult
+0,3,male,24.0,1,0,16.1,S,Southampton,False,0,2,0,2.8390784635086144,Young Adult
+1,3,male,31.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Young Adult
+0,1,male,70.0,1,1,71.0,S,Southampton,False,1,3,0,4.276666119016055,Senior
+0,3,male,16.0,1,1,20.25,S,Southampton,False,0,3,0,3.056356895370426,Teen
+1,2,female,30.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+0,1,male,19.0,1,0,53.1,S,Southampton,False,1,2,0,3.9908341858524357,Young Adult
+0,3,male,31.0,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Young Adult
+1,2,female,4.0,1,1,23.0,S,Southampton,False,0,3,0,3.1780538303479458,Child
+1,3,male,6.0,0,1,12.475,S,Southampton,False,1,2,0,2.600836116795061,Child
+0,3,male,33.0,0,0,9.5,S,Southampton,True,0,1,1,2.3513752571634776,Young Adult
+0,3,male,23.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+1,2,female,48.0,1,2,65.0,S,Southampton,False,0,4,0,4.189654742026425,Adult
+1,2,male,0.67,1,1,14.5,S,Southampton,False,0,3,0,2.740840023925201,Child
+0,3,male,28.0,0,0,7.7958,S,Southampton,True,0,1,1,2.174274334826008,Young Adult
+1,1,female,33.0,0,0,86.5,S,Southampton,True,1,1,1,4.471638793363569,Young Adult
+0,3,male,41.0,0,0,7.125,S,Southampton,True,0,1,1,2.094945728215801,Adult
+1,3,male,20.0,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,Young Adult
+1,1,female,36.0,1,2,120.0,S,Southampton,False,1,4,0,4.795790545596741,Adult
+0,3,male,16.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Teen
+1,1,female,51.0,1,0,77.9583,S,Southampton,False,1,2,0,4.368919865004903,Adult
+0,1,male,,0,0,39.6,C,Cherbourg,True,0,1,1,3.703768066607687,
+0,3,female,30.5,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Young Adult
+0,3,male,,1,0,24.15,Q,Queenstown,False,0,2,0,3.224857896545748,
+0,3,male,32.0,0,0,8.3625,S,Southampton,True,0,1,1,2.236712348843338,Young Adult
+0,3,male,24.0,0,0,9.5,S,Southampton,True,0,1,1,2.3513752571634776,Young Adult
+0,3,male,48.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Adult
+0,2,female,57.0,0,0,10.5,S,Southampton,True,1,1,1,2.4423470353692043,Adult
+1,2,female,54.0,1,3,23.0,S,Southampton,False,0,5,0,3.1780538303479458,Adult
+0,3,male,18.0,0,0,7.75,S,Southampton,True,0,1,1,2.169053700369523,Teen
+0,3,male,,0,0,7.75,Q,Queenstown,True,1,1,1,2.169053700369523,
+1,3,female,5.0,0,0,12.475,S,Southampton,True,0,1,1,2.600836116795061,Child
+0,3,male,,0,0,7.7375,Q,Queenstown,True,0,1,1,2.1676241075599285,
+1,1,female,43.0,0,1,211.3375,S,Southampton,False,1,2,0,5.35817698994543,Adult
+1,3,female,13.0,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,Teen
+1,1,female,17.0,1,0,57.0,S,Southampton,False,1,2,0,4.060443010546419,Teen
+0,1,male,29.0,0,0,30.0,S,Southampton,True,1,1,1,3.4339872044851463,Young Adult
+0,3,male,,1,2,23.45,S,Southampton,False,0,4,0,3.196630215920881,
+0,3,male,25.0,0,0,7.05,S,Southampton,True,0,1,1,2.0856720914304723,Young Adult
+0,3,male,25.0,0,0,7.25,S,Southampton,True,0,1,1,2.1102132003465894,Young Adult
+1,3,female,18.0,0,0,7.4958,S,Southampton,True,0,1,1,2.139571923732859,Teen
+0,3,male,8.0,4,1,29.125,Q,Queenstown,False,0,6,0,3.405355391810819,Child
+1,3,male,1.0,1,2,20.575,S,Southampton,False,0,4,0,3.0715352369694915,Child
+0,1,male,46.0,0,0,79.2,C,Cherbourg,True,1,1,1,4.384523514872469,Adult
+0,2,male,16.0,0,0,26.0,S,Southampton,True,0,1,1,3.295836866004329,Teen
+0,1,male,,0,0,30.6958,C,Cherbourg,True,0,1,1,3.4561841799918147,
+0,3,male,25.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+0,2,male,39.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+1,1,female,49.0,0,0,25.9292,S,Southampton,True,1,1,1,3.2932111997353943,Adult
+1,3,female,31.0,0,0,8.6833,S,Southampton,True,0,1,1,2.270402752283094,Young Adult
+0,3,male,30.0,0,0,7.2292,C,Cherbourg,True,0,1,1,2.1076888046179385,Young Adult
+0,3,female,30.0,1,1,24.15,S,Southampton,False,0,3,0,3.224857896545748,Young Adult
+1,2,female,31.0,1,1,26.25,S,Southampton,False,0,3,0,3.305053521109253,Young Adult
+1,1,male,11.0,1,2,120.0,S,Southampton,False,1,4,0,4.795790545596741,Child
+1,3,male,0.42,0,1,8.5167,C,Cherbourg,False,0,2,0,2.2530481500547457,Child
+1,3,male,27.0,0,0,6.975,S,Southampton,True,0,1,1,2.076311648670908,Young Adult
+0,3,male,31.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Young Adult
+0,1,male,39.0,0,0,0.0,S,Southampton,True,1,1,1,0.0,Adult
+0,3,female,18.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Teen
+1,1,female,33.0,1,0,53.1,S,Southampton,False,1,2,0,3.9908341858524357,Young Adult
+0,3,male,26.0,0,0,7.8875,S,Southampton,True,0,1,1,2.184645795129359,Young Adult
+0,3,male,39.0,0,0,24.15,S,Southampton,True,0,1,1,3.224857896545748,Adult
+0,2,male,35.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,3,female,6.0,4,2,31.275,S,Southampton,False,0,7,0,3.4742929367327062,Child
+0,3,male,30.5,0,0,8.05,S,Southampton,True,0,1,1,2.2027647577118348,Young Adult
+0,1,male,,0,0,0.0,S,Southampton,True,1,1,1,0.0,
+0,3,female,23.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Young Adult
+0,2,male,31.0,1,1,37.0042,C,Cherbourg,False,0,3,0,3.637696679934592,Young Adult
+0,3,male,43.0,0,0,6.45,S,Southampton,True,0,1,1,2.0082140323914683,Adult
+0,3,male,10.0,3,2,27.9,S,Southampton,False,0,6,0,3.3638415951183864,Child
+1,1,female,52.0,1,1,93.5,S,Southampton,False,1,3,0,4.548599834499697,Adult
+1,3,male,27.0,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,Young Adult
+0,1,male,38.0,0,0,0.0,S,Southampton,True,0,1,1,0.0,Adult
+1,3,female,27.0,0,1,12.475,S,Southampton,False,1,2,0,2.600836116795061,Young Adult
+0,3,male,2.0,4,1,39.6875,S,Southampton,False,0,6,0,3.705920919968788,Child
+0,3,male,,0,0,6.95,Q,Queenstown,True,0,1,1,2.0731719286662407,
+0,3,male,,0,0,56.4958,S,Southampton,True,0,1,1,4.05171190165724,
+1,2,male,1.0,0,2,37.0042,C,Cherbourg,False,0,3,0,3.637696679934592,Child
+1,3,male,,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,
+1,1,female,62.0,0,0,80.0,,,True,1,1,1,4.394449154672439,Senior
+1,3,female,15.0,1,0,14.4542,C,Cherbourg,False,0,2,0,2.737880811060884,Teen
+1,2,male,0.83,1,1,18.75,S,Southampton,False,0,3,0,2.9831534913471307,Child
+0,3,male,23.0,0,0,7.8542,S,Southampton,True,0,1,1,2.180891922715322,Young Adult
+0,3,male,18.0,0,0,8.3,S,Southampton,True,0,1,1,2.2300144001592104,Teen
+1,1,female,39.0,1,1,83.1583,C,Cherbourg,False,1,3,0,4.432699549165613,Adult
+0,3,male,21.0,0,0,8.6625,S,Southampton,True,0,1,1,2.2682524139135403,Young Adult
+1,1,male,,0,0,29.7,C,Cherbourg,True,1,1,1,3.4242626545931514,
+0,3,male,20.0,0,0,7.925,S,Southampton,True,0,1,1,2.188856327665703,Young Adult
+0,2,male,16.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Teen
+1,1,female,30.0,0,0,31.0,C,Cherbourg,True,0,1,1,3.4657359027997265,Young Adult
+0,3,male,34.5,0,0,6.4375,C,Cherbourg,True,0,1,1,2.006534770871748,Young Adult
+0,3,male,42.0,0,0,7.55,S,Southampton,True,0,1,1,2.145931282948669,Adult
+0,3,male,35.0,0,0,7.8958,C,Cherbourg,True,0,1,1,2.1855792552411137,Young Adult
+0,2,male,28.0,0,1,33.0,S,Southampton,False,0,2,0,3.5263605246161616,Young Adult
+1,1,female,,1,0,89.1042,C,Cherbourg,False,1,2,0,4.500966778400217,
+0,3,male,4.0,4,2,31.275,S,Southampton,False,0,7,0,3.4742929367327062,Child
+0,3,male,74.0,0,0,7.775,S,Southampton,True,0,1,1,2.1719067693519296,Senior
+0,3,female,9.0,1,1,15.2458,C,Cherbourg,False,0,3,0,2.7878344138303452,Child
+1,1,female,16.0,0,1,39.4,S,Southampton,False,1,2,0,3.6988297849671046,Teen
+0,2,female,44.0,1,0,26.0,S,Southampton,False,0,2,0,3.295836866004329,Adult
+1,3,female,18.0,0,1,9.35,S,Southampton,False,0,2,0,2.336986519711378,Teen
+1,1,female,45.0,1,1,164.8667,S,Southampton,False,0,3,0,5.11118445372147,Adult
+1,1,male,51.0,0,0,26.55,S,Southampton,True,1,1,1,3.3160025355989236,Adult
+1,3,female,24.0,0,3,19.2583,C,Cherbourg,False,0,4,0,3.0085645861193133,Young Adult
+0,3,male,41.0,2,0,14.1083,S,Southampton,False,0,3,0,2.7152442616824506,Adult
+0,2,male,21.0,1,0,11.5,S,Southampton,False,0,2,0,2.5257286443082556,Young Adult
+1,1,female,48.0,0,0,25.9292,S,Southampton,True,1,1,1,3.2932111997353943,Adult
+0,2,male,24.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Young Adult
+1,2,female,42.0,0,0,13.0,S,Southampton,True,0,1,1,2.6390573296152584,Adult
+1,2,female,27.0,1,0,13.8583,C,Cherbourg,False,0,2,0,2.698558631668595,Young Adult
+0,1,male,31.0,0,0,50.4958,S,Southampton,True,1,1,1,3.941500250945973,Young Adult
+0,3,male,,0,0,9.5,S,Southampton,True,0,1,1,2.3513752571634776,
+1,3,male,4.0,1,1,11.1333,S,Southampton,False,0,3,0,2.495953738718064,Child
+1,1,female,47.0,1,1,52.5542,S,Southampton,False,1,3,0,3.9806942251907276,Adult
+0,1,male,33.0,0,0,5.0,S,Southampton,True,1,1,1,1.791759469228055,Young Adult
+0,3,male,47.0,0,0,9.0,S,Southampton,True,0,1,1,2.302585092994046,Adult
+1,2,female,28.0,1,0,24.0,C,Cherbourg,False,0,2,0,3.2188758248682006,Young Adult
+1,3,female,15.0,0,0,7.225,C,Cherbourg,True,0,1,1,2.1071782966514356,Teen
+0,3,male,20.0,0,0,9.8458,S,Southampton,True,0,1,1,2.3837779082709782,Young Adult
+1,1,female,56.0,0,1,83.1583,C,Cherbourg,False,1,2,0,4.432699549165613,Adult
+1,2,female,25.0,0,1,26.0,S,Southampton,False,0,2,0,3.295836866004329,Young Adult
+0,3,male,33.0,0,0,7.8958,S,Southampton,True,0,1,1,2.1855792552411137,Young Adult
+0,3,female,22.0,0,0,10.5167,S,Southampton,True,0,1,1,2.4437981558973862,Young Adult
+0,2,male,28.0,0,0,10.5,S,Southampton,True,0,1,1,2.4423470353692043,Young Adult
+0,3,female,39.0,0,5,29.125,Q,Queenstown,False,0,6,0,3.405355391810819,Adult
+1,1,female,19.0,0,0,30.0,S,Southampton,True,1,1,1,3.4339872044851463,Young Adult
+0,3,female,,1,2,23.45,S,Southampton,False,0,4,0,3.196630215920881,
+1,1,male,26.0,0,0,30.0,C,Cherbourg,True,1,1,1,3.4339872044851463,Young Adult
+0,3,male,32.0,0,0,7.75,Q,Queenstown,True,0,1,1,2.169053700369523,Young Adult
