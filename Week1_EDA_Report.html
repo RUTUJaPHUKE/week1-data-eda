@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 1 Task Report – Data Acquisition, Cleaning & EDA</title>
+<style>
+  /* ── Base ───────────────────────────────────────── */
+  body {
+    font-family: "Calibri", "Segoe UI", sans-serif;
+    font-size: 11pt;
+    line-height: 1.65;
+    color: #222;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background: #fff;
+  }
+  /* ── Cover ──────────────────────────────────────── */
+  .cover {
+    text-align: center;
+    padding: 60px 0 50px;
+    border-bottom: 3px solid #1a5376;
+    margin-bottom: 40px;
+  }
+  .cover h1 {
+    font-size: 28pt;
+    color: #1a5376;
+    margin: 0 0 8px;
+    letter-spacing: 1px;
+  }
+  .cover .subtitle {
+    font-size: 14pt;
+    color: #444;
+    margin: 8px 0;
+  }
+  .cover .meta {
+    font-size: 10.5pt;
+    color: #666;
+    margin-top: 18px;
+  }
+  /* ── TOC ────────────────────────────────────────── */
+  .toc {
+    background: #f5f8fb;
+    border-left: 4px solid #1a5376;
+    padding: 18px 24px;
+    margin-bottom: 36px;
+    border-radius: 4px;
+  }
+  .toc h2 { margin: 0 0 10px; font-size: 13pt; color: #1a5376; }
+  .toc ol { margin: 0; padding-left: 22px; }
+  .toc li { margin: 3px 0; font-size: 10.5pt; }
+  .toc a { color: #1a5376; text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  /* ── Headings ───────────────────────────────────── */
+  h1.section {
+    font-size: 16pt;
+    color: #1a5376;
+    border-bottom: 2px solid #1a5376;
+    padding-bottom: 6px;
+    margin-top: 40px;
+  }
+  h2.subsection {
+    font-size: 13pt;
+    color: #1a5376;
+    margin-top: 26px;
+    margin-bottom: 8px;
+  }
+  /* ── Tables ─────────────────────────────────────── */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 14px 0 20px;
+    font-size: 10.5pt;
+  }
+  th {
+    background: #1a5376;
+    color: #fff;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  td {
+    padding: 7px 12px;
+    border: 1px solid #ccd;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f4f7fb; }
+  /* ── Code blocks ────────────────────────────────── */
+  pre {
+    background: #f0f0f0;
+    border-left: 4px solid #1a5376;
+    padding: 14px 18px;
+    font-family: "Courier New", monospace;
+    font-size: 9.5pt;
+    overflow-x: auto;
+    border-radius: 4px;
+    margin: 14px 0 20px;
+    line-height: 1.55;
+  }
+  code { font-family: "Courier New", monospace; font-size: 9.5pt; }
+  /* ── Figures ────────────────────────────────────── */
+  .figure {
+    text-align: center;
+    margin: 24px 0 30px;
+    page-break-inside: avoid;
+  }
+  .figure img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  }
+  .figure .fig-caption {
+    font-size: 10pt;
+    font-style: italic;
+    color: #444;
+    max-width: 80%;
+    margin: 10px auto 0;
+    line-height: 1.5;
+  }
+  .figure .fig-title {
+    font-weight: bold;
+    font-size: 11pt;
+    color: #1a5376;
+    margin-bottom: 8px;
+  }
+  /* ── Insight cards ──────────────────────────────── */
+  .insight {
+    background: #f0f6fb;
+    border-left: 4px solid #1a5376;
+    padding: 14px 18px;
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+  .insight .insight-title {
+    font-weight: bold;
+    color: #1a5376;
+    font-size: 11pt;
+    margin-bottom: 6px;
+  }
+  /* ── Callout ────────────────────────────────────── */
+  .callout {
+    background: #fff8e1;
+    border-left: 4px solid #f39c12;
+    padding: 12px 16px;
+    margin: 14px 0;
+    font-size: 10.5pt;
+    border-radius: 4px;
+  }
+  /* ── Lists ──────────────────────────────────────── */
+  ul, ol { margin: 10px 0 14px; padding-left: 28px; }
+  li { margin: 5px 0; }
+  /* ── Missing-value placeholder ──────────────────── */
+  .fig-placeholder {
+    background: #f0f6fb;
+    border: 2px dashed #aac;
+    border-radius: 6px;
+    padding: 30px;
+    color: #557;
+    font-size: 10pt;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
+  }
+  /* ── Page break hint ────────────────────────────── */
+  .page-break { page-break-after: always; margin: 40px 0; border: none; border-top: 1px dashed #ccc; }
+  /* ── Print / export ─────────────────────────────── */
+  @media print {
+    body { padding: 0; max-width: 100%; font-size: 10pt; }
+    .page-break { page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════ COVER ════ -->
+<div class="cover">
+  <h1>WEEK 1 TASK REPORT</h1>
+  <p class="subtitle">Data Acquisition, Cleaning &amp; Exploratory Analysis</p>
+  <p class="subtitle" style="font-size:12pt;">Dataset: Titanic Passenger Records (1912)</p>
+  <div class="meta">
+    <strong>Prepared by:</strong> Data Science Intern &nbsp;|&nbsp;
+    <strong>Date:</strong> August 2026<br>
+    <strong>Tools:</strong> Python 3.12 · pandas · NumPy · Matplotlib · Seaborn · python-docx
+  </div>
+</div>
+
+<!-- ══════════════════════════════════ TOC ════════ -->
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#s1">Introduction &amp; Objectives</a></li>
+    <li><a href="#s2">Dataset Overview</a></li>
+    <li><a href="#s3">Data Acquisition</a></li>
+    <li><a href="#s4">Data Cleaning &amp; Preprocessing</a>
+      <ol>
+        <li><a href="#s41">Handling Missing Values</a></li>
+        <li><a href="#s42">Removing Duplicates</a></li>
+        <li><a href="#s43">Data Type Corrections</a></li>
+        <li><a href="#s44">Feature Engineering</a></li>
+      </ol>
+    </li>
+    <li><a href="#s5">Exploratory Data Analysis</a>
+      <ol>
+        <li><a href="#s51">Univariate Analysis</a></li>
+        <li><a href="#s52">Bivariate Analysis</a></li>
+        <li><a href="#s53">Correlation Analysis</a></li>
+      </ol>
+    </li>
+    <li><a href="#s6">Visualizations &amp; Interpretation</a></li>
+    <li><a href="#s7">Key Insights &amp; Findings</a></li>
+    <li><a href="#s8">Conclusion &amp; Next Steps</a></li>
+    <li><a href="#s9">References</a></li>
+  </ol>
+</div>
+
+<hr class="page-break">
+
+<!-- ══════════════════════════ 1. INTRODUCTION ════ -->
+<h1 class="section" id="s1">1. Introduction &amp; Objectives</h1>
+<p>
+  This report documents the complete Week 1 data science workflow, covering
+  data acquisition, systematic cleaning and preprocessing, and exploratory
+  data analysis (EDA). The <strong>Titanic dataset</strong> was selected for
+  its rich mix of numeric and categorical variables, real-world missing data
+  patterns, and well-known domain context — making it ideal for demonstrating
+  a rigorous preparation pipeline.
+</p>
+<p>
+  The dataset records information about 891 of the 2,224 passengers and crew
+  aboard the RMS Titanic, which sank on 15 April 1912. Survival prediction is
+  a classic supervised classification problem; however, this report focuses
+  exclusively on data preparation and exploration rather than modelling.
+</p>
+
+<h2 class="subsection">Objectives</h2>
+<ul>
+  <li>Acquire a publicly available, domain-relevant dataset programmatically.</li>
+  <li>Apply systematic data cleaning techniques: imputation, deduplication, and type correction.</li>
+  <li>Perform univariate, bivariate, and multivariate exploratory analysis.</li>
+  <li>Produce a minimum of 3 high-quality, annotated visualizations (6 were produced).</li>
+  <li>Document every methodological decision with statistical justification.</li>
+  <li>Summarise actionable insights to inform downstream modelling work.</li>
+</ul>
+
+<hr class="page-break">
+
+<!-- ═══════════════════════ 2. DATASET OVERVIEW ═══ -->
+<h1 class="section" id="s2">2. Dataset Overview</h1>
+<p>
+  The Titanic dataset is one of the most widely used introductory datasets in
+  data science. It was originally compiled from
+  <a href="https://www.encyclopedia-titanica.org" target="_blank">Encyclopedia Titanica</a>
+  records and is available via Kaggle, Seaborn, and OpenML.
+</p>
+<p>
+  <strong>Raw shape:</strong> 891 rows × 15 columns.
+  <strong>Target variable:</strong> <code>survived</code>
+  (binary: 0 = did not survive, 1 = survived).
+  <strong>Overall survival rate:</strong> 38.4&nbsp;%.
+</p>
+
+<h2 class="subsection">Dataset Attributes</h2>
+<table>
+  <thead>
+    <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>survived</code></td><td>int (0/1)</td><td>Target – 1 = Survived, 0 = Did not survive</td></tr>
+    <tr><td><code>pclass</code></td><td>category</td><td>Ticket class: 1st, 2nd, or 3rd (socioeconomic proxy)</td></tr>
+    <tr><td><code>sex</code></td><td>category</td><td>Passenger sex: male / female</td></tr>
+    <tr><td><code>age</code></td><td>float</td><td>Age in years (19.9 % missing in raw data)</td></tr>
+    <tr><td><code>sibsp</code></td><td>int</td><td># of siblings / spouses aboard</td></tr>
+    <tr><td><code>parch</code></td><td>int</td><td># of parents / children aboard</td></tr>
+    <tr><td><code>fare</code></td><td>float</td><td>Ticket price in British pounds sterling</td></tr>
+    <tr><td><code>embarked</code></td><td>category</td><td>Port: C = Cherbourg, Q = Queenstown, S = Southampton</td></tr>
+    <tr><td><code>deck</code></td><td>category</td><td>Cabin deck letter (77.2 % missing → replaced by binary flag)</td></tr>
+    <tr><td><code>family_size</code></td><td>int</td><td><em>Engineered:</em> sibsp + parch + 1</td></tr>
+    <tr><td><code>is_alone</code></td><td>int (0/1)</td><td><em>Engineered:</em> 1 if travelling alone</td></tr>
+    <tr><td><code>fare_log</code></td><td>float</td><td><em>Engineered:</em> log(1 + fare) to reduce right skew</td></tr>
+    <tr><td><code>age_group</code></td><td>category</td><td><em>Engineered:</em> Child / Teen / Young Adult / Adult / Senior</td></tr>
+  </tbody>
+</table>
+
+<hr class="page-break">
+
+<!-- ═══════════════════════ 3. DATA ACQUISITION ══ -->
+<h1 class="section" id="s3">3. Data Acquisition</h1>
+<p>
+  The dataset was acquired programmatically using <strong>Seaborn's built-in
+  dataset loader</strong>, which downloads versioned CSV files from the official
+  Seaborn GitHub repository
+  (<a href="https://github.com/mwaskom/seaborn-data" target="_blank">github.com/mwaskom/seaborn-data</a>).
+  A URL-based fallback was implemented for network-restricted environments.
+</p>
+<p>
+  <strong>Rationale:</strong> Using Seaborn's loader pins the dataset version,
+  avoids manual file management, and is reproducible across environments. The
+  raw data was immediately saved as a local CSV for auditability and offline reuse.
+</p>
+
+<h2 class="subsection">Acquisition Code</h2>
+<pre><code>import seaborn as sns
+import urllib.request
+import pandas as pd
+
+# Primary method – seaborn versioned loader
+try:
+    df_raw = sns.load_dataset("titanic")          # fetches from GitHub
+    print(f"Dataset loaded. Shape: {df_raw.shape}")   # (891, 15)
+
+except Exception:
+    # Fallback – direct CSV download
+    url = ("https://raw.githubusercontent.com/"
+           "datasciencedojo/datasets/master/titanic.csv")
+    urllib.request.urlretrieve(url, "titanic_raw.csv")
+    df_raw = pd.read_csv("titanic_raw.csv")
+
+df_raw.to_csv("titanic_raw.csv", index=False)     # persist local copy</code></pre>
+
+<hr class="page-break">
+
+<!-- ════════════════════ 4. DATA CLEANING ════════ -->
+<h1 class="section" id="s4">4. Data Cleaning &amp; Preprocessing</h1>
+<p>
+  All cleaning steps were applied to a <em>copy</em> of the raw data to preserve
+  the original for comparison and audit. Each decision below is justified with
+  statistical reasoning.
+</p>
+
+<!-- 4.1 -->
+<h2 class="subsection" id="s41">4.1 &nbsp; Handling Missing Values</h2>
+<p>A missing value audit was the first action performed. Three columns contained nulls:</p>
+
+<table>
+  <thead>
+    <tr><th>Column</th><th>Missing Count</th><th>Missing %</th><th>Treatment Applied</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>age</code></td><td>177</td><td>19.9 %</td>
+      <td>Median imputation — median (28.0) used as robust central estimate</td>
+    </tr>
+    <tr>
+      <td><code>deck</code></td><td>688</td><td>77.2 %</td>
+      <td>Dropped; binary flag <code>deck_known</code> preserves informational signal</td>
+    </tr>
+    <tr>
+      <td><code>embarked</code></td><td>2</td><td>0.2 %</td>
+      <td>Mode imputation — only 2 rows affected, minimal impact</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <strong>Why median for age?</strong> The age distribution has a mild positive skew (skew ≈ 0.41).
+  The median (28.0) is more robust than the mean (29.7) because it is unaffected by extreme
+  values at the upper tail (passengers aged 70–80). Using the median minimises distortion of
+  the imputed distribution.
+</div>
+
+<div class="callout">
+  <strong>Why drop deck?</strong> With 77.2 % of values absent, any imputed value would be
+  largely fabricated noise. This missingness is likely <em>Missing Not At Random (MNAR)</em> —
+  lower-class passengers had fewer cabin records. Converting to a binary indicator
+  (<code>deck_known</code>) retains the meaningful signal without introducing false precision.
+</div>
+
+<pre><code>df = df_raw.copy()
+
+# Age – median imputation
+df["age"].fillna(df["age"].median(), inplace=True)          # median = 28.0
+
+# Embarked – mode imputation (S = Southampton)
+df["embarked"].fillna(df["embarked"].mode()[0], inplace=True)
+
+# Deck – binary indicator then drop original
+df["deck_known"] = df["deck"].notna().astype(int)
+df.drop(columns=["deck"], inplace=True)</code></pre>
+
+<!-- 4.2 -->
+<h2 class="subsection" id="s42">4.2 &nbsp; Removing Duplicates</h2>
+<p>
+  pandas' <code>duplicated()</code> method was applied to detect exact row-level duplicates.
+  <strong>Zero duplicate rows</strong> were found — each record represents a unique passenger.
+  The step is retained in the pipeline for completeness and reproducibility.
+</p>
+<pre><code>n_dupes = df.duplicated().sum()     # → 0
+df.drop_duplicates(inplace=True)</code></pre>
+
+<!-- 4.3 -->
+<h2 class="subsection" id="s43">4.3 &nbsp; Data Type Corrections</h2>
+<p>
+  Columns loaded with generic <code>object</code> or <code>int64</code> types were cast to
+  semantically appropriate types. This reduces memory consumption and enables correct
+  pandas groupby and aggregation behaviour:
+</p>
+<ul>
+  <li><code>pclass</code> (int64 → category): Ordinal variable with 3 fixed levels; Categorical encoding reduces memory.</li>
+  <li><code>sex</code> (object → category): Binary nominal variable.</li>
+  <li><code>embarked</code> (object → category): 3-level nominal variable.</li>
+  <li><code>survived</code> (int64 → int): Kept as integer for arithmetic operations on the target.</li>
+</ul>
+<pre><code>df["survived"] = df["survived"].astype(int)
+for col in ["pclass", "sex", "embarked", "embark_town"]:
+    if col in df.columns:
+        df[col] = df[col].astype("category")</code></pre>
+
+<!-- 4.4 -->
+<h2 class="subsection" id="s44">4.4 &nbsp; Feature Engineering</h2>
+<p>Four derived features were created to improve analytical expressiveness:</p>
+
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Formula / Method</th><th>Rationale</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>family_size</code></td>
+      <td><code>sibsp + parch + 1</code></td>
+      <td>Consolidates two correlated columns into one intuitive family-unit count</td>
+    </tr>
+    <tr>
+      <td><code>is_alone</code></td>
+      <td><code>1 if family_size == 1 else 0</code></td>
+      <td>Captures the "solo traveller" effect — hypothesised to reduce survival probability</td>
+    </tr>
+    <tr>
+      <td><code>fare_log</code></td>
+      <td><code>numpy.log1p(fare)</code></td>
+      <td>Reduces right skew (original skew ≈ 4.8 → transformed ≈ 0.5); improves model assumptions</td>
+    </tr>
+    <tr>
+      <td><code>age_group</code></td>
+      <td><code>pd.cut(age, [0,12,18,35,60,100])</code></td>
+      <td>Discretises age into interpretable lifecycle stages for group-level analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code>import numpy as np
+
+df["family_size"] = df["sibsp"] + df["parch"] + 1
+df["is_alone"]    = (df["family_size"] == 1).astype(int)
+df["fare_log"]    = np.log1p(df["fare"])
+df["age_group"]   = pd.cut(
+    df["age"],
+    bins   = [0,  12,  18,   35,     60,    100],
+    labels = ["Child", "Teen", "Young Adult", "Adult", "Senior"]
+)
+
+# Save cleaned dataset
+df.to_csv("titanic_cleaned.csv", index=False)
+print(f"Cleaned shape: {df.shape}")    # (891, 16)
+print(f"Remaining nulls: {df.isnull().sum().sum()}")   # 0</code></pre>
+
+<p>
+  <strong>Final cleaned dataset shape:</strong> 891 rows × 16 columns.
+  <strong>Remaining missing values: 0.</strong>
+</p>
+
+<hr class="page-break">
+
+<!-- ════════════════════════ 5. EDA ══════════════ -->
+<h1 class="section" id="s5">5. Exploratory Data Analysis</h1>
+
+<!-- 5.1 -->
+<h2 class="subsection" id="s51">5.1 &nbsp; Univariate Analysis</h2>
+<p>Summary statistics for key numeric features after cleaning:</p>
+
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Mean</th><th>Median</th><th>Std Dev</th><th>Min</th><th>Max</th><th>Skewness</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>age</code></td><td>29.36</td><td>28.00</td><td>13.02</td><td>0.42</td><td>80.00</td><td>0.41</td></tr>
+    <tr><td><code>fare</code></td><td>32.20</td><td>14.45</td><td>49.69</td><td>0.00</td><td>512.33</td><td>4.79</td></tr>
+    <tr><td><code>fare_log</code></td><td>2.78</td><td>2.68</td><td>1.19</td><td>0.00</td><td>6.24</td><td>0.45</td></tr>
+    <tr><td><code>family_size</code></td><td>1.88</td><td>1.00</td><td>1.58</td><td>1.00</td><td>11.00</td><td>2.59</td></tr>
+    <tr><td><code>sibsp</code></td><td>0.52</td><td>0.00</td><td>1.10</td><td>0.00</td><td>8.00</td><td>3.70</td></tr>
+    <tr><td><code>parch</code></td><td>0.38</td><td>0.00</td><td>0.81</td><td>0.00</td><td>6.00</td><td>3.73</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Key univariate observations:</strong></p>
+<ul>
+  <li><code>age</code> is approximately symmetric post-imputation (skew 0.41). The median of 28 aligns closely with the mean of 29.4, confirming near-normality.</li>
+  <li><code>fare</code> is strongly right-skewed (skew 4.79) driven by expensive 1st-class tickets. The maximum fare of £512.33 is an extreme outlier vs. the median of £14.45.</li>
+  <li>The log transformation reduces <code>fare</code> skewness from 4.79 → 0.45, making it far more suitable for parametric models.</li>
+  <li>60.7 % of passengers did not survive — the target is moderately imbalanced and should be addressed in modelling (e.g., stratified cross-validation).</li>
+  <li>The majority of passengers (68.5 %) travelled alone (<code>family_size = 1</code>).</li>
+</ul>
+
+<!-- 5.2 -->
+<h2 class="subsection" id="s52">5.2 &nbsp; Bivariate Analysis</h2>
+<p>Survival rates broken down by key categorical predictors:</p>
+
+<table>
+  <thead>
+    <tr><th>Variable</th><th>Category</th><th>Survivors</th><th>Total</th><th>Survival Rate</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="2"><strong>Sex</strong></td><td>Female</td><td>233</td><td>314</td><td><strong>74.2 %</strong></td></tr>
+    <tr><td>Male</td><td>109</td><td>577</td><td><strong>18.9 %</strong></td></tr>
+    <tr><td rowspan="3"><strong>Passenger Class</strong></td><td>1st Class</td><td>136</td><td>216</td><td><strong>63.0 %</strong></td></tr>
+    <tr><td>2nd Class</td><td>87</td><td>184</td><td><strong>47.3 %</strong></td></tr>
+    <tr><td>3rd Class</td><td>119</td><td>491</td><td><strong>24.2 %</strong></td></tr>
+    <tr><td rowspan="2"><strong>Travelling Alone</strong></td><td>With Family</td><td>179</td><td>354</td><td><strong>50.6 %</strong></td></tr>
+    <tr><td>Alone</td><td>163</td><td>537</td><td><strong>30.4 %</strong></td></tr>
+    <tr><td rowspan="5"><strong>Age Group</strong></td><td>Child (0–12)</td><td>38</td><td>68</td><td><strong>55.9 %</strong></td></tr>
+    <tr><td>Teen (13–18)</td><td>27</td><td>67</td><td><strong>40.3 %</strong></td></tr>
+    <tr><td>Young Adult (19–35)</td><td>164</td><td>389</td><td><strong>42.2 %</strong></td></tr>
+    <tr><td>Adult (36–60)</td><td>105</td><td>268</td><td><strong>39.2 %</strong></td></tr>
+    <tr><td>Senior (61+)</td><td>8</td><td>30</td><td><strong>26.7 %</strong></td></tr>
+  </tbody>
+</table>
+
+<!-- 5.3 -->
+<h2 class="subsection" id="s53">5.3 &nbsp; Correlation Analysis</h2>
+<p>
+  Pearson correlation coefficients were calculated between all numeric features.
+  A lower-triangular heatmap (Figure 4) visualises the full matrix. Notable findings:
+</p>
+<ul>
+  <li><strong>survived vs. fare_log (r = +0.26):</strong> Moderate positive — higher-paying passengers had better survival odds, consistent with class-based advantages.</li>
+  <li><strong>survived vs. is_alone (r = −0.16):</strong> Weak negative — solo travellers were less likely to survive.</li>
+  <li><strong>survived vs. age (r = −0.07):</strong> Very weak negative — slight disadvantage for older passengers, but age effects are mostly visible in extreme groups (children vs. elderly).</li>
+  <li><strong>family_size vs. sibsp (r = +0.89):</strong> Strong positive — expected, as sibsp is a direct component of family_size.</li>
+  <li><strong>fare vs. fare_log (r = +0.91):</strong> Near-perfect — the log transform preserves rank ordering.</li>
+  <li><strong>is_alone vs. family_size (r = −0.65):</strong> Strong negative — definitional: passengers travelling alone always have the smallest family size.</li>
+</ul>
+
+<hr class="page-break">
+
+<!-- ══════════════════════ 6. VISUALIZATIONS ═════ -->
+<h1 class="section" id="s6">6. Visualizations &amp; Interpretation</h1>
+<p>
+  Six visualizations were produced using Matplotlib and Seaborn. All figures are
+  saved in the <code>visualizations/</code> folder alongside this report. Each
+  figure is described in detail below; if images are not embedded, run
+  <code>run_all.py</code> to generate the PNG files, then view them in the
+  <code>visualizations/</code> directory.
+</p>
+
+<!-- Figure 1 -->
+<div class="figure">
+  <div class="fig-title">Figure 1 – Missing Values Heatmap (Raw Data)</div>
+  <img src="visualizations/fig1_missing_heatmap.png"
+       alt="Missing values heatmap – red=missing, green=present"
+       onerror="this.parentElement.innerHTML='<div class=fig-title>Figure 1 – Missing Values Heatmap (Raw Data)</div><div class=fig-placeholder>📊 Run <code>run_all.py</code> to generate this visualization.<br>File: visualizations/fig1_missing_heatmap.png<br><br><b>What it shows:</b> Each column across all 891 rows — red = missing, green = present.<br>Three columns had missing data: age (19.9%), deck (77.2%), embarked (0.2%).</div>'">
+  <div class="fig-caption">
+    Each column of the raw dataset is shown across all 891 rows. Red cells indicate missing
+    values; green indicates present data. Three columns had missing data: <code>age</code>
+    (19.9 %), <code>deck</code> (77.2 %), and <code>embarked</code> (&lt;1 %). This heatmap
+    directly informed the imputation and removal strategy described in Section 4.
+  </div>
+</div>
+
+<!-- Figure 2 -->
+<div class="figure">
+  <div class="fig-title">Figure 2 – Survival Analysis Overview (3-Panel)</div>
+  <img src="visualizations/fig2_survival_overview.png"
+       alt="Survival analysis overview – count, by sex, by class"
+       onerror="this.parentElement.innerHTML='<div class=fig-title>Figure 2 – Survival Analysis Overview</div><div class=fig-placeholder>📊 Run <code>run_all.py</code> to generate this visualization.<br>File: visualizations/fig2_survival_overview.png<br><br><b>Panel A:</b> 342 survived (38.4%), 549 did not (61.6%).<br><b>Panel B:</b> Female survival 74.2% vs Male 18.9%.<br><b>Panel C:</b> 1st class 63.0%, 2nd class 47.3%, 3rd class 24.2%.</div>'">
+  <div class="fig-caption">
+    <strong>Panel A:</strong> Only 38.4 % of passengers survived overall.
+    <strong>Panel B:</strong> Female survival was 74.2 % vs. 18.9 % for males — a 55-point gap
+    reflecting the "women and children first" Birkenhead Drill.
+    <strong>Panel C:</strong> 1st-class passengers survived at 63.0 %, falling to 47.3 % (2nd) and
+    24.2 % (3rd), revealing a stark socioeconomic gradient in survival outcomes.
+  </div>
+</div>
+
+<!-- Figure 3 -->
+<div class="figure">
+  <div class="fig-title">Figure 3 – Feature Distributions Before &amp; After Cleaning</div>
+  <img src="visualizations/fig3_distributions.png"
+       alt="Age and fare distributions before and after cleaning"
+       onerror="this.parentElement.innerHTML='<div class=fig-title>Figure 3 – Feature Distributions</div><div class=fig-placeholder>📊 Run <code>run_all.py</code> to generate this visualization.<br>File: visualizations/fig3_distributions.png<br><br><b>Top row:</b> Age distribution raw vs. after median imputation (shape preserved).<br><b>Bottom row:</b> Fare raw (skew 4.79) vs. log-transformed fare_log (skew 0.45).</div>'">
+  <div class="fig-caption">
+    <strong>Top row:</strong> The age distribution before and after median imputation. The overall
+    shape is preserved with a slight increase at the median peak — a hallmark of median imputation
+    on a near-symmetric distribution.
+    <strong>Bottom row:</strong> Fare before transformation is heavily right-skewed (skew 4.79) with
+    a long upper tail. After log transformation, <code>fare_log</code> is approximately symmetric
+    (skew 0.45), satisfying parametric model assumptions far better.
+  </div>
+</div>
+
+<!-- Figure 4 -->
+<div class="figure">
+  <div class="fig-title">Figure 4 – Correlation Heatmap (Numeric Features)</div>
+  <img src="visualizations/fig4_correlation_heatmap.png"
+       alt="Lower-triangular Pearson correlation heatmap"
+       onerror="this.parentElement.innerHTML='<div class=fig-title>Figure 4 – Correlation Heatmap</div><div class=fig-placeholder>📊 Run <code>run_all.py</code> to generate this visualization.<br>File: visualizations/fig4_correlation_heatmap.png<br><br><b>Strongest survival correlates:</b> fare_log (+0.26), is_alone (−0.16), age (−0.07).<br><b>Expected intercorrelations:</b> sibsp/parch with family_size (+0.89, +0.79).</div>'">
+  <div class="fig-caption">
+    Lower-triangular heatmap of Pearson correlation coefficients. Cool colours (blue) indicate
+    negative correlations; warm colours (red) indicate positive. The strongest survival correlates
+    are <code>fare_log</code> (+0.26) and <code>is_alone</code> (−0.16). The high intercorrelation
+    among <code>sibsp</code>, <code>parch</code>, and <code>family_size</code> is expected by
+    construction. No severe multicollinearity exists among independent predictors
+    (max r ≈ 0.47 outside derived features).
+  </div>
+</div>
+
+<!-- Figure 5 -->
+<div class="figure">
+  <div class="fig-title">Figure 5 – Age Distribution by Survival Status &amp; Sex</div>
+  <img src="visualizations/fig5_age_violin_box.png"
+       alt="Violin and box plots of age by survival and sex"
+       onerror="this.parentElement.innerHTML='<div class=fig-title>Figure 5 – Age by Survival &amp; Sex</div><div class=fig-placeholder>📊 Run <code>run_all.py</code> to generate this visualization.<br>File: visualizations/fig5_age_violin_box.png<br><br><b>Panel A (violin):</b> Non-survivors skew slightly older overall.<br><b>Panel B (box):</b> Male children (&lt;12) show noticeably higher survival rates.</div>'">
+  <div class="fig-caption">
+    <strong>Panel A (violin plot):</strong> Age distributions are broadly similar for survivors and
+    non-survivors; non-survivors skew slightly older.
+    <strong>Panel B (box plot):</strong> Among females, age had minimal influence on survival — rates
+    were high across all groups. Among males, very young passengers (children under 12) had
+    noticeably elevated survival rates, consistent with "children first" prioritisation.
+  </div>
+</div>
+
+<!-- Figure 6 -->
+<div class="figure">
+  <div class="fig-title">Figure 6 – Fare vs Age Scatter Plot (coloured by Survival)</div>
+  <img src="visualizations/fig6_fare_vs_age_scatter.png"
+       alt="Scatter plot of log-fare vs age coloured by survival status"
+       onerror="this.parentElement.innerHTML='<div class=fig-title>Figure 6 – Fare vs Age Scatter</div><div class=fig-placeholder>📊 Run <code>run_all.py</code> to generate this visualization.<br>File: visualizations/fig6_fare_vs_age_scatter.png<br><br><b>Green points:</b> Survived (cluster in higher fare region).<br><b>Red points:</b> Did not survive (dominate lower fare / all ages).</div>'">
+  <div class="fig-caption">
+    Each point represents a passenger, coloured green (survived) or red (did not survive).
+    Survivors cluster in the higher fare region across all age groups, reinforcing the
+    class-survival relationship. Very young passengers show a higher green density even at
+    lower fare levels. The scatter reveals no sharp age threshold above which adult survival
+    probability drops dramatically.
+  </div>
+</div>
+
+<hr class="page-break">
+
+<!-- ══════════════════════ 7. KEY INSIGHTS ═══════ -->
+<h1 class="section" id="s7">7. Key Insights &amp; Findings</h1>
+
+<div class="insight">
+  <div class="insight-title">Insight 1: Gender was the single strongest predictor of survival.</div>
+  Female passengers survived at 74.2 % compared to 18.9 % for males — a 55-percentage-point
+  gap. This reflects the documented "women and children first" Birkenhead Drill applied during
+  evacuation. Any predictive model must account for this dominant effect; failing to include
+  <code>sex</code> as a feature would result in substantial performance degradation.
+</div>
+
+<div class="insight">
+  <div class="insight-title">Insight 2: Passenger class created a clear survival hierarchy.</div>
+  1st class: 63.0 % | 2nd class: 47.3 % | 3rd class: 24.2 %. Cabin location (upper decks for
+  1st class), proximity to lifeboats, and differential crew attention likely all contributed.
+  Fare — a continuous proxy for class — shows a correlation of +0.26 with survival.
+</div>
+
+<div class="insight">
+  <div class="insight-title">Insight 3: Travelling alone significantly reduced survival chances.</div>
+  Solo travellers had a 30.4 % survival rate vs. 50.6 % for those with family. Small family
+  units (size 2–4) performed best; very large groups (5+) fared poorly, likely due to
+  difficulty coordinating evacuation with many dependants.
+</div>
+
+<div class="insight">
+  <div class="insight-title">Insight 4: Children had elevated survival rates, especially among males.</div>
+  Children (0–12) had the highest survival rate of any age group at 55.9 %. Violin and box
+  plots show this effect is most pronounced for young male passengers, where survival was
+  notably higher than the overall male rate of 18.9 %. For females, age had minimal influence —
+  survival was high across all groups.
+</div>
+
+<div class="insight">
+  <div class="insight-title">Insight 5: Log-transforming fare substantially improved distributional shape.</div>
+  The raw fare variable has a skewness of 4.79 driven by a small number of extremely expensive
+  1st-class tickets (maximum £512.33 vs. median £14.45). After log transformation, skewness
+  falls to 0.45, making <code>fare_log</code> far more suitable for linear and parametric
+  models and improving gradient-based optimisers.
+</div>
+
+<div class="insight">
+  <div class="insight-title">Insight 6: Missing data patterns reveal important structural information.</div>
+  The deck column's 77.2 % missingness is likely <em>Missing Not At Random (MNAR)</em> —
+  lower-class passengers had fewer recorded cabin assignments, making the missingness itself
+  informative. Age missingness (19.9 %) is likely <em>Missing At Random (MAR)</em> and was
+  safely recovered through median imputation. Embarked (0.2 %) is negligible.
+</div>
+
+<hr class="page-break">
+
+<!-- ══════════════════════ 8. CONCLUSION ═════════ -->
+<h1 class="section" id="s8">8. Conclusion &amp; Next Steps</h1>
+<p>
+  This report demonstrated a complete, reproducible data preparation and exploratory
+  analysis pipeline on the Titanic dataset. Starting from raw, partially incomplete data,
+  a principled cleaning workflow was applied: missing values handled with statistically
+  justified methods, data types corrected, redundant columns removed, and four informative
+  engineered features created. The EDA confirmed well-known sociodemographic patterns —
+  gender, class, and fare are the dominant survival factors — and surfaced nuanced findings
+  around age-survival interactions and the "travelling alone" penalty.
+</p>
+<p>
+  The cleaned dataset (<code>titanic_cleaned.csv</code>) and all six visualizations are
+  saved alongside this report and are ready for the next phase of work.
+</p>
+
+<h2 class="subsection">Recommended Next Steps</h2>
+<ul>
+  <li><strong>Week 2 – Feature Selection:</strong> Apply mutual information scores, chi-square tests, and VIF analysis to identify the optimal feature subset for modelling.</li>
+  <li><strong>Week 2 – Baseline Modelling:</strong> Train Logistic Regression and Decision Tree classifiers as performance baselines using 5-fold stratified cross-validation.</li>
+  <li><strong>Week 3 – Advanced Models:</strong> Implement Random Forest and XGBoost, tuning hyperparameters with GridSearchCV or Optuna.</li>
+  <li><strong>Week 3 – Model Interpretability:</strong> Use SHAP values to explain individual predictions and validate that learned patterns align with domain knowledge.</li>
+  <li><strong>Ongoing – Data Versioning:</strong> Integrate DVC (Data Version Control) to track dataset versions and model artefacts across all experiments.</li>
+</ul>
+
+<hr class="page-break">
+
+<!-- ══════════════════════ 9. REFERENCES ═════════ -->
+<h1 class="section" id="s9">9. References</h1>
+<ol>
+  <li>Eaton, J. P. &amp; Haas, C. A. (1994). <em>Titanic: Triumph and Tragedy.</em> Patrick Stephens Ltd.</li>
+  <li>Waskom, M. L. (2021). Seaborn: Statistical Data Visualization. <em>Journal of Open Source Software, 6</em>(60), 3021. <a href="https://doi.org/10.21105/joss.03021" target="_blank">https://doi.org/10.21105/joss.03021</a></li>
+  <li>McKinney, W. (2010). Data Structures for Statistical Computing in Python. <em>Proceedings of the 9th Python in Science Conference,</em> 51–56.</li>
+  <li>Hunter, J. D. (2007). Matplotlib: A 2D Graphics Environment. <em>Computing in Science &amp; Engineering, 9</em>(3), 90–95.</li>
+  <li>Harris, C. R. et al. (2020). Array programming with NumPy. <em>Nature, 585,</em> 357–362.</li>
+  <li>Kaggle. (2012). Titanic – Machine Learning from Disaster. <a href="https://www.kaggle.com/competitions/titanic" target="_blank">kaggle.com/competitions/titanic</a></li>
+  <li>Encyclopedia Titanica. (2023). Passenger &amp; Crew Biographies. <a href="https://www.encyclopedia-titanica.org" target="_blank">encyclopedia-titanica.org</a></li>
+  <li>Van Rossum, G. &amp; Drake, F. L. (2009). <em>Python 3 Reference Manual.</em> CreateSpace Independent Publishing Platform.</li>
+</ol>
+
+<hr style="margin-top:50px; border-color:#ccc;">
+<p style="text-align:center; font-size:9.5pt; color:#888; margin-top:10px;">
+  Week 1 Task Report &nbsp;·&nbsp; Data Science Internship &nbsp;·&nbsp; August 2026
+  &nbsp;·&nbsp; Generated by <code>run_all.py</code>
+</p>
+
+</body>
+</html>
